@@ -1,0 +1,39 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin absoluteCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// MEDIA QUERY MANAGER
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet (portrait)
+900 - 1200px:   Tablet (landscape)
+900 - 1200px:   Tablet (landscape)
+1200 - 1800px:  Desktop - base project sizes
+1800px+:        Big-size screens
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) { @content; }
+  }
+  @if $breakpoint == tab-portrait {
+    @media only screen and (max-width: 56.25em) { @content; }
+  }
+  @if $breakpoint == tab-landscape {
+    @media only screen and (max-width: 75em) { @content; }
+  }
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) { @content; }
+  }
+}
