@@ -7,97 +7,81 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="language" content="RO">
   <title>ANTICARIAT.NET - Cartile vechi pe care le cauti, la preturi minime!</title>
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster|PT+Sans:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <meta name="description" content="ANTICARIAT.NET este anticariatul unde gasiti cele mai multe carti vechi din toate domeniile. Zilnic stocul nostru de carte este actualizat.">
 </head>
 
 <body>
-  <div class="navigation">
-    <div class="navigation__top">
-      <a class="navigation__link" title="Clienti - administrare" href="https://www.anticariat.net/clienti_admin.php">Cont
-        client</a>
-      <a class="navigation__link" title="Formular de contact, numere de telefon, adresa noastra" href="https://www.anticariat.net/informatii-contact.php">Contact</a>
-      <a class="navigation__link" title="Informatii despre noi" href="https://www.anticariat.net/informatii.php">Info</a>
-    </div>
-    <div class="navigation__main">
-      <div class="row">
-        <div class="col-1-of-4">
-          <a title="ANTICARIAT.NET" href="#"><img class="navigation__main--logo" src="https://www.anticariat.net/img/logo/anticariat.gif"
-              alt="ANTICARIAT.NET"></a>
-        </div>
-        <div class="col-2-of-4">
-          <form class="navigation__main--search" action="https://www.anticariat.net/cautare-rezultate.php" method="GET">
-            <input type="text" name="t" placeholder=" Caută după cuvinte cheie ca: titlu, autor, editură...">
-            <input type="submit" value="Caută">
-          </form>
+  <div class="container">
+    <div class="navigation">
+      <div class="navigation__top">
+        <a class="navigation__link" title="Clienti - administrare" href="https://www.anticariat.net/clienti_admin.php">Cont
+          client</a>
+        <a class="navigation__link" title="Formular de contact, numere de telefon, adresa noastra" href="https://www.anticariat.net/informatii-contact.php">Contact</a>
+        <a class="navigation__link" title="Informatii despre noi" href="https://www.anticariat.net/informatii.php">Info</a>
+      </div>
+      <div class="navigation__main">
+        <div class="row">
+          <div class="col-1-of-4">
+            <a title="ANTICARIAT.NET" href="#"><img class="navigation__main--logo" src="https://www.anticariat.net/img/logo/anticariat.gif"
+                alt="ANTICARIAT.NET"></a>
+            <div class="navigation__motto">
+              <p class="navigation__motto--paragraph">
+                <span>Cărţile vechi pe care le cauţi,</span><br>
+                <span>la preţuri minime!</span>
+              </p>
+            </div>
+          </div>
+          <div class="col-2-of-4">
+            <form class="navigation__main--search" action="https://www.anticariat.net/cautare-rezultate.php" method="GET">
+              <input type="text" name="t" placeholder="Caută aici după cuvinte cheie: titlu, autor, editură...">
+              <input type="submit" value="Caută">
+            </form>
 
+          </div>
+          <div class="col-1-of-4">
+            <div class="shopping-cart__preview">
+              <div class="shopping-cart__preview--title">
+                <span>Coș de cumpărături</span>
+              </div>
+              <div class="shopping-cart__preview--icon">
+                <a title="COS CUMPARATURI" href="https://www.anticariat.net/cos.php"><i class="material-icons md-48 white">
+                    shopping_cart
+                  </i></a>
+              </div>
+              <div class="shopping-cart__preview--content">
+                <span><b>15</b> lei</span>
+                <span><b>1</b> produse </span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-1-of-4">
-          <strong>Co&#537; de cump&#259;r&#259;turi</strong>
-          <br><span><b>1</b> produse - <b>15</b> lei</span>
-          <a title="COS CUMPARATURI" href="https://www.anticariat.net/cos.php"><img alt="COS CUMPARATURI" border="0"
-              src="https://www.anticariat.net/img/cos/cos.gif"></a>
-        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="header__promo">
+      <div class="header__promo--item">
+        <a href='https://www.anticariat.net/c/1986/carte-straina'>Carte de import</a>
+      </div>
+      <div class="header__promo--item">
+        <a href='https://www.anticariat.net/c/7/stiinta-tehnica'>Carte tehnică</a>
+      </div>
+      <div class="header__promo--item">
+        <a href='https://www.anticariat.net/c/54/medicina-sanatate'>Medicină</a>
+      </div>
+      <div class="header__promo--item">
+        <a href='https://www.anticariat.net/promotii'>PROMOȚII</a>
       </div>
     </div>
   </div>
 
 
 
-
   <div class="container" align="center">
-
-
-
-    <!-- <table width="100%" cellspacing="0" cellpadding="2">
-      <tr>
-        <td width="1%" valign="top" class="logo">
-
-        </td>
-
-        <td valign="middle" align="center">
-          <div class="cautare">
-            <form name="cautare_form" action="https://www.anticariat.net/cautare-rezultate.php">
-              <input class="cautare_form_input" type="text" name="t" value="titlu si/sau autor si/sau editura si/sau cuvinte cheie"
-                size="50" onClick="this.value=''">
-              <input class="cautare_form_submit" type="submit" value="Cautare">
-            </form>
-          </div>
-        </td>
-        <td valign="middle">
-          <table width="100%" cellpadding="0" cellspacing="0" class="cos">
-            <tr>
-              <td valign="top" onMouseOver="this.cursor='pointer';this.style.color='#880000';this.style.background='#FFFFE0'"
-                onMouseOut="this.style.color='#000000';this.style.background='#ffffff'" onClick="window.location='https://www.anticariat.net/cos.php'">
-                <strong>Co&#537; de cump&#259;r&#259;turi</strong>
-                <br><span><b>1</b> produse - <b>15</b> lei</span>
-              </td>
-              <td width="1%">
-                <a title="COS CUMPARATURI" href="https://www.anticariat.net/cos.php"><img alt="COS CUMPARATURI" border="0"
-                    src="https://www.anticariat.net/img/cos/cos.gif"></a>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table> -->
-
-    <div class="departament_submenu">
-      Cărţile vechi pe care le cauţi, la preţuri minime!
-      <div class="departament_menu_item">
-        <a href='https://www.anticariat.net/c/1986/carte-straina'>Carte de import</a>
-      </div>
-      <div class="departament_menu_item">
-        <a href='https://www.anticariat.net/c/7/stiinta-tehnica'>Carte tehnica</a>
-      </div>
-      <div class="departament_menu_item">
-        <a href='https://www.anticariat.net/c/54/medicina-sanatate'>Medicina</a>
-      </div>
-      <div class="departament_menu_item">
-        <a href='https://www.anticariat.net/promotii'>PROMOTII</a>
-      </div>
-    </div>
 
     <table align="center" class="container" cellpadding="0" cellspacing="0" border="0" style="margin-top:3px;">
       <tr>
@@ -257,7 +241,8 @@
           <div class="st_big_table">
             <h1><b><a href='https://www.anticariat.net/noutati' title='Carti nou intrate in anticariat'>NOUT&#258;&#354;I</a>
                 <div style="float:right;display:inline;font-weight:lighter;">
-                  <a href="https://www.anticariat.net/noutati" title='carti nou intrate in anticariat'>vezi cartile nou
+                  <a href="https://www.anticariat.net/noutati" title='carti nou intrate in anticariat'>vezi cartile
+                    nou
                     intrate</a>
                 </div>
               </b></h1>
@@ -1046,7 +1031,8 @@
           </div>
 
           <div class="st_big_table">
-            <h1><b><a href="https://www.anticariat.net/cautare-promotie.php?pid=21">Discount special 50% lichidare stoc</a></b></h1>
+            <h1><b><a href="https://www.anticariat.net/cautare-promotie.php?pid=21">Discount special 50% lichidare
+                  stoc</a></b></h1>
             <div class="st_big_table_content">
               <table width="100%" class="galerie_carti" cellpadding="0" cellspacing="0">
                 <tr>
@@ -1148,7 +1134,8 @@
                         <div class="format_book_mic_vertical_titlu">
                           <a title="Admiterea in enunturi, solutii si bareme, Volumul al II-lea - Matematica: 1988-1995"
                             itemprop="url" href="https://www.anticariat.net/p/160080/Admiterea-enunturi-solutii-bareme-Volumul-lea-Matematica-1988-1995-Constantin"><span
-                              itemprop="name">Admiterea in enunturi, solutii si bareme, Volumul al II-lea - Matematica:
+                              itemprop="name">Admiterea in enunturi, solutii si bareme, Volumul al II-lea -
+                              Matematica:
                               1988-1995</span></a>
                         </div>
                         <div class="format_book_mic_vertical_pret" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span
