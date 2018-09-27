@@ -96,8 +96,9 @@
 
   &__motto {
     font-family: "Lobster", cursive;
-    font-size: 2rem;
+    font-size: 3rem;
     color: $color-grey-dark-2;
+    float: left;
     
     &--paragraph {
       margin-left: 2rem;

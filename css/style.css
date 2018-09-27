@@ -255,8 +255,9 @@ body {
           transform: translateY(0); }
   .navigation__motto {
     font-family: "Lobster", cursive;
-    font-size: 2rem;
-    color: #777; }
+    font-size: 3rem;
+    color: #777;
+    float: left; }
     .navigation__motto--paragraph {
       margin-left: 2rem;
       padding-left: 2rem;
