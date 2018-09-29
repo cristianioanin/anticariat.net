@@ -36,7 +36,6 @@
 
     &--logo {
       padding-top: 2rem;
-      padding-left: 5rem;
       width: 100%;
     }
 
@@ -96,8 +95,8 @@
 
   &__motto {
     font-family: "Lobster", cursive;
-    font-size: 3rem;
-    color: $color-grey-dark-2;
+    font-size: 2.7rem;
+    color: $color-primary;
     float: left;
     
     &--paragraph {
@@ -130,12 +129,13 @@
     margin-left: 1rem;
 
     & span {
-      display: block;
-
-      &:last-child {
-        color: $color-grey-dark-2;
-      }
+      font-weight: 700;
     }
+
+    & div:last-of-type {
+      color: $color-grey-dark-2;
+    }
+
   }
 
   &--icon {

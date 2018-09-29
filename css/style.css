@@ -115,6 +115,9 @@ body {
 .u-margin-top-big {
   margin-top: 8rem !important; }
 
+.u-no-float {
+  float: none; }
+
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -212,7 +215,6 @@ body {
     width: 100%; }
     .navigation__main--logo {
       padding-top: 2rem;
-      padding-left: 5rem;
       width: 100%; }
     .navigation__main--search {
       padding: 3rem 0;
@@ -255,8 +257,8 @@ body {
           transform: translateY(0); }
   .navigation__motto {
     font-family: "Lobster", cursive;
-    font-size: 3rem;
-    color: #777;
+    font-size: 2.7rem;
+    color: #C10202;
     float: left; }
     .navigation__motto--paragraph {
       margin-left: 2rem;
@@ -280,9 +282,9 @@ body {
     font-size: 2.5rem;
     margin-left: 1rem; }
     .shopping-cart__preview--content span {
-      display: block; }
-      .shopping-cart__preview--content span:last-child {
-        color: #777; }
+      font-weight: 700; }
+    .shopping-cart__preview--content div:last-of-type {
+      color: #777; }
   .shopping-cart__preview--icon {
     float: right;
     margin-right: 2rem;
@@ -357,7 +359,7 @@ body {
 .header__promo {
   width: 100%;
   padding: 2rem 0 0 0;
-  font-size: 3rem;
+  font-size: 2.7rem;
   font-weight: 700;
   float: right;
   border-bottom: 0.3rem solid #777; }
@@ -380,3 +382,101 @@ body {
       background-position: 100%;
       color: #C10202;
       transform: translateX(1rem) translateY(-0.1rem); }
+
+.left-pane {
+  width: 19%;
+  display: inline-block;
+  vertical-align: top; }
+
+.side-menu {
+  width: 100%;
+  box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-radius: 0 1rem 1rem 0;
+  border-bottom: 1px solid #000;
+  background-color: #eee;
+  margin-top: 1rem; }
+  .side-menu__title {
+    background-color: #f7f7f7;
+    color: #C10202;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-left: 1rem;
+    border-bottom: 1px solid #777;
+    border-top-right-radius: 1rem;
+    text-transform: uppercase; }
+  .side-menu__items {
+    font-size: 1.6rem; }
+  .side-menu__item {
+    display: block; }
+    .side-menu__item:link, .side-menu__item:visited {
+      color: #333;
+      text-decoration: none;
+      padding: 0 2rem;
+      margin-right: 1rem;
+      background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+      background-size: 230%;
+      transition: all .4s; }
+    .side-menu__item:hover, .side-menu__item:active {
+      color: #C10202;
+      font-weight: 700;
+      transform: translateX(1rem);
+      background-position: 100%;
+      cursor: pointer; }
+  .side-menu__more--link {
+    display: block;
+    margin-left: 60%; }
+    .side-menu__more--link:link, .side-menu__more--link:visited {
+      padding: .5rem;
+      text-decoration: none;
+      font-size: 1.6rem;
+      color: #C10202;
+      font-weight: 700;
+      transition: all .3s; }
+    .side-menu__more--link:hover,
+    .side-menu__more--link :active {
+      transform: translateX(-1rem) scale(1.1); }
+  .side-menu__partner {
+    background-color: #fff;
+    border-bottom-right-radius: 1rem; }
+  .side-menu__logo-partner {
+    width: 100%;
+    padding: 0 1rem;
+    border-bottom-right-radius: 1rem; }
+  .side-menu__subscription {
+    color: #333;
+    padding: 1rem; }
+    .side-menu__subscription input[type=email] {
+      display: block;
+      padding: .5rem;
+      border-radius: 4px;
+      background-color: rgba(255, 255, 255, 0.5);
+      border: none;
+      border-bottom: 3px solid transparent;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+      width: 100%;
+      transition: all .3s; }
+      .side-menu__subscription input[type=email]:focus {
+        outline: none;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+        border-bottom: 3px solid #C10202; }
+    .side-menu__subscription input[type=submit] {
+      margin-left: 65%;
+      margin-top: 1rem;
+      background-color: #C10202;
+      color: #fff;
+      border: none;
+      padding: .5rem;
+      border-radius: 4px;
+      transition: all .3s; }
+      .side-menu__subscription input[type=submit]:hover {
+        transform: translateY(-0.3rem);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+      .side-menu__subscription input[type=submit]:active, .side-menu__subscription input[type=submit]:focus {
+        outline: none;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        transform: translateY(0); }
+
+.right-pane {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top; }
