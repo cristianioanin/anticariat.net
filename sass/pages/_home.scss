@@ -45,7 +45,7 @@
   border-radius: 0 1rem 1rem 0;
   border-bottom: 1px solid $color-black;
   background-color: $color-grey-light-2;
-  margin-top: 1rem;
+  margin-top: 3rem;
 
 
   &__title {
@@ -169,7 +169,65 @@
 }
 
 .right-pane {
-  width: 50%;
+  width: 80%;
   display: inline-block;
-  vertical-align: top;
+  padding: 0 2rem;
+}
+
+.gallery {
+  width: 100%;
+
+  &__frame {
+    width: 100%;
+    font-size: $default-font-size;
+    text-align: center;
+
+    &::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    &--title {      
+      display: inline-block;
+      margin-top: 2rem;
+
+      & h1 {
+        text-align: left !important;
+        float: left;
+      }
+      
+      & h1 a {
+        text-decoration: none;
+        color: $color-primary;
+      }
+    }
+
+    &--more {
+      width: 50%;
+      display: inline-block;
+    }
+
+    &--items {
+      width: 100%;
+
+      @include respond(tab-landscape) {
+        & :nth-child(10) {
+          display: none;
+        }
+      }
+    
+      @include respond(tab-portrait) {
+        & :nth-child(10) {
+          display: none;
+        }
+      }
+    
+      @include respond(phone) {
+        & :nth-child(10) {
+          display: none;
+        }
+      }
+    }
+  }
 }

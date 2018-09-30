@@ -29,7 +29,7 @@
       }
     }
 
-    @include respond(tab-portrait) {
+    @include respond(phone) {
       width: 100% !important;
     }
   }

@@ -2,7 +2,6 @@
 0 - 600px:      Phone
 600 - 900px:    Tablet (portrait)
 900 - 1200px:   Tablet (landscape)
-900 - 1200px:   Tablet (landscape)
 1200 - 1800px:  Desktop - base project sizes
 1800px+:        Big-size screens
 */
@@ -117,6 +116,25 @@ body {
 
 .u-no-float {
   float: none; }
+
+.book {
+  float: left;
+  width: calc((100% - 10rem) / 5);
+  padding: 1rem 0;
+  margin: 1rem 1rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  border-radius: 1rem; }
+  @media only screen and (max-width: 75em) {
+    .book {
+      width: calc((100% - 8rem) / 4); } }
+  @media only screen and (max-width: 56.25em) {
+    .book {
+      width: calc((100% - 6rem) / 3); } }
+  @media only screen and (max-width: 37.5em) {
+    .book {
+      width: calc((100% - 4rem) / 2); } }
+  .book__cover {
+    width: 100%; }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -309,7 +327,7 @@ body {
       transform: translateY(0); }
 
 .row {
-  max-width: 100%;
+  max-width: 1000rem;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 5%; }
@@ -332,7 +350,7 @@ body {
         .row [class^="col-"]:not(:last-child) {
           margin-right: 0;
           margin-bottom: 3%; } }
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (max-width: 37.5em) {
       .row [class^="col-"] {
         width: 100% !important; } }
   .row .col-1-of-2 {
@@ -394,7 +412,7 @@ body {
   border-radius: 0 1rem 1rem 0;
   border-bottom: 1px solid #000;
   background-color: #eee;
-  margin-top: 1rem; }
+  margin-top: 3rem; }
   .side-menu__title {
     background-color: #f7f7f7;
     color: #C10202;
@@ -477,6 +495,40 @@ body {
         transform: translateY(0); }
 
 .right-pane {
-  width: 50%;
+  width: 80%;
   display: inline-block;
-  vertical-align: top; }
+  padding: 0 2rem; }
+
+.gallery {
+  width: 100%; }
+  .gallery__frame {
+    width: 100%;
+    font-size: 1.6rem;
+    text-align: center; }
+    .gallery__frame::after {
+      content: "";
+      clear: both;
+      display: table; }
+    .gallery__frame--title {
+      display: inline-block;
+      margin-top: 2rem; }
+      .gallery__frame--title h1 {
+        text-align: left !important;
+        float: left; }
+      .gallery__frame--title h1 a {
+        text-decoration: none;
+        color: #C10202; }
+    .gallery__frame--more {
+      width: 50%;
+      display: inline-block; }
+    .gallery__frame--items {
+      width: 100%; }
+      @media only screen and (max-width: 75em) {
+        .gallery__frame--items :nth-child(10) {
+          display: none; } }
+      @media only screen and (max-width: 56.25em) {
+        .gallery__frame--items :nth-child(10) {
+          display: none; } }
+      @media only screen and (max-width: 37.5em) {
+        .gallery__frame--items :nth-child(10) {
+          display: none; } }
