@@ -1,10 +1,29 @@
 .book {
   float: left;
   width: calc((100% - 10rem) / 5);
-  padding: 1rem 0;
-  margin: 1rem 1rem;
-  box-shadow: 0 1rem 2rem rgba($color-black, .2);
-  border-radius: 1rem;
+  margin: 2rem 1rem;
+  box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  transition: all .3s;
+
+  &:hover {
+    transform: translateY(-1rem) scale(1.03);
+    box-shadow: 0 1rem 2rem rgba($color-black, .3);
+
+    .book__title {
+      transform: translateY(-6rem);
+      overflow: visible;
+
+      & a {
+        font-size: 1.8rem;
+        color: $color-black;
+      }
+    }
+  }
 
   @include respond(tab-landscape) {
     width: calc((100% - 8rem) / 4);
@@ -20,13 +39,31 @@
 
   &__cover {
     width: 100%;
+    height: 30rem;
+    border-radius: 3px 3px 0 0;
   }
 
   &__title {
+    background-color: $color-white;
+    background-size: cover;
+    font-size: 1.6rem;
+    padding: 0 1rem;
+    overflow: hidden;
+    height: 6rem;
 
+    transition: all .3s;
+    
+    & a:link,
+    & a:visited {
+      text-decoration: none;
+      color: $color-grey-dark-3;
+    }
   }
 
   &__price {
-
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    color: $color-primary;
+    align-self: flex-end;
   }
 }

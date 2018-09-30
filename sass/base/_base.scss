@@ -27,13 +27,17 @@ body {
   padding: 0 3rem;
 
   @include respond(tab-portrait) {
-    padding: 0;
+    padding: 0 1rem;
   }
 }
 
 .container {
   width: 90vw;
   margin: 0 auto;
+
+  @include respond(tab-portrait) {
+    width: 100vw;
+  }
 }
 
 ::selection {

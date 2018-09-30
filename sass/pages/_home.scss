@@ -37,6 +37,17 @@
   display: inline-block;
   vertical-align: top;
 
+  @include respond(tab-landscape) {
+    width: 19%;
+  }
+
+  @include respond(tab-portrait) {
+    width: 24%;
+  }
+
+  @include respond(phone) {
+    width: 29%;
+  }
 }
 
 .side-menu {
@@ -104,7 +115,7 @@
       }
 
       &:hover,
-      :active {
+      &:active {
         transform: translateX(-1rem) scale(1.1);
       }
     }
@@ -166,12 +177,41 @@
       }
     }
   }
+
+  &__recommended {
+    background-color: $color-white;
+    border-bottom-right-radius: 1rem;
+
+    &--book {
+      width: 90%;
+      padding: 2rem;
+      text-align: center;
+
+      & a:link,
+      & a:visited {
+        text-decoration: none;
+        color: $color-grey-dark-3;
+      }
+    }
+  }
 }
 
 .right-pane {
   width: 80%;
   display: inline-block;
   padding: 0 2rem;
+
+  @include respond(tab-landscape) {
+    width: 80%;
+  }
+
+  @include respond(tab-portrait) {
+    width: 75%;
+  }
+
+  @include respond(phone) {
+    width: 70%;
+  }
 }
 
 .gallery {
@@ -188,13 +228,22 @@
       display: table;
     }
 
-    &--title {      
-      display: inline-block;
+    &--header {
+      width: 100%;  
+      height: 5.5rem; 
       margin-top: 2rem;
+      margin-left: 1rem;
+      color: $color-primary;
+      box-shadow: 0 .5rem .5rem rgba($color-black,.1);
+    }
+
+    &--title { 
+      width: 50%;  
+      padding-left: 1rem;  
+      float: left;
 
       & h1 {
         text-align: left !important;
-        float: left;
       }
       
       & h1 a {
@@ -204,28 +253,44 @@
     }
 
     &--more {
-      width: 50%;
-      display: inline-block;
+      float: right;
+      padding: 1rem;
     }
 
     &--items {
       width: 100%;
+      display: flex;
+      flex-wrap: wrap;
 
       @include respond(tab-landscape) {
-        & :nth-child(10) {
+        & :nth-child(n+9):nth-child(-n+10) {
           display: none;
         }
       }
     
       @include respond(tab-portrait) {
-        & :nth-child(10) {
+        & :nth-child(n+7):nth-child(-n+8) {
+          display: none;
+        }
+      }
+    }
+
+    &--onerow {
+      @include respond(tab-landscape) {
+        & :nth-child(n+5):nth-child(-n+5) {
           display: none;
         }
       }
     
-      @include respond(phone) {
-        & :nth-child(10) {
+      @include respond(tab-portrait) {
+        & :nth-child(n+4):nth-child(-n+4) {
           display: none;
+        }
+      }
+
+      @include respond(phone) {
+        & :nth-child(n+4):nth-child(-n+4) {
+          display: inline-flex;
         }
       }
     }

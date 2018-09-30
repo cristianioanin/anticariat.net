@@ -57,11 +57,14 @@ body {
   padding: 0 3rem; }
   @media only screen and (max-width: 56.25em) {
     body {
-      padding: 0; } }
+      padding: 0 1rem; } }
 
 .container {
   width: 90vw;
   margin: 0 auto; }
+  @media only screen and (max-width: 56.25em) {
+    .container {
+      width: 100vw; } }
 
 ::selection {
   background-color: #C10202;
@@ -120,10 +123,22 @@ body {
 .book {
   float: left;
   width: calc((100% - 10rem) / 5);
-  padding: 1rem 0;
-  margin: 1rem 1rem;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  border-radius: 1rem; }
+  margin: 2rem 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all .3s; }
+  .book:hover {
+    transform: translateY(-1rem) scale(1.03);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3); }
+    .book:hover .book__title {
+      transform: translateY(-6rem);
+      overflow: visible; }
+      .book:hover .book__title a {
+        font-size: 1.8rem;
+        color: #000; }
   @media only screen and (max-width: 75em) {
     .book {
       width: calc((100% - 8rem) / 4); } }
@@ -134,7 +149,26 @@ body {
     .book {
       width: calc((100% - 4rem) / 2); } }
   .book__cover {
-    width: 100%; }
+    width: 100%;
+    height: 30rem;
+    border-radius: 3px 3px 0 0; }
+  .book__title {
+    background-color: #fff;
+    background-size: cover;
+    font-size: 1.6rem;
+    padding: 0 1rem;
+    overflow: hidden;
+    height: 6rem;
+    transition: all .3s; }
+    .book__title a:link,
+    .book__title a:visited {
+      text-decoration: none;
+      color: #333; }
+  .book__price {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    color: #C10202;
+    align-self: flex-end; }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -405,6 +439,15 @@ body {
   width: 19%;
   display: inline-block;
   vertical-align: top; }
+  @media only screen and (max-width: 75em) {
+    .left-pane {
+      width: 19%; } }
+  @media only screen and (max-width: 56.25em) {
+    .left-pane {
+      width: 24%; } }
+  @media only screen and (max-width: 37.5em) {
+    .left-pane {
+      width: 29%; } }
 
 .side-menu {
   width: 100%;
@@ -450,8 +493,7 @@ body {
       color: #C10202;
       font-weight: 700;
       transition: all .3s; }
-    .side-menu__more--link:hover,
-    .side-menu__more--link :active {
+    .side-menu__more--link:hover, .side-menu__more--link:active {
       transform: translateX(-1rem) scale(1.1); }
   .side-menu__partner {
     background-color: #fff;
@@ -493,11 +535,31 @@ body {
         outline: none;
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
         transform: translateY(0); }
+  .side-menu__recommended {
+    background-color: #fff;
+    border-bottom-right-radius: 1rem; }
+    .side-menu__recommended--book {
+      width: 90%;
+      padding: 2rem;
+      text-align: center; }
+      .side-menu__recommended--book a:link,
+      .side-menu__recommended--book a:visited {
+        text-decoration: none;
+        color: #333; }
 
 .right-pane {
   width: 80%;
   display: inline-block;
   padding: 0 2rem; }
+  @media only screen and (max-width: 75em) {
+    .right-pane {
+      width: 80%; } }
+  @media only screen and (max-width: 56.25em) {
+    .right-pane {
+      width: 75%; } }
+  @media only screen and (max-width: 37.5em) {
+    .right-pane {
+      width: 70%; } }
 
 .gallery {
   width: 100%; }
@@ -509,26 +571,41 @@ body {
       content: "";
       clear: both;
       display: table; }
+    .gallery__frame--header {
+      width: 100%;
+      height: 5.5rem;
+      margin-top: 2rem;
+      margin-left: 1rem;
+      color: #C10202;
+      box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1); }
     .gallery__frame--title {
-      display: inline-block;
-      margin-top: 2rem; }
+      width: 50%;
+      padding-left: 1rem;
+      float: left; }
       .gallery__frame--title h1 {
-        text-align: left !important;
-        float: left; }
+        text-align: left !important; }
       .gallery__frame--title h1 a {
         text-decoration: none;
         color: #C10202; }
     .gallery__frame--more {
-      width: 50%;
-      display: inline-block; }
+      float: right;
+      padding: 1rem; }
     .gallery__frame--items {
-      width: 100%; }
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap; }
       @media only screen and (max-width: 75em) {
-        .gallery__frame--items :nth-child(10) {
+        .gallery__frame--items :nth-child(n+9):nth-child(-n+10) {
           display: none; } }
       @media only screen and (max-width: 56.25em) {
-        .gallery__frame--items :nth-child(10) {
+        .gallery__frame--items :nth-child(n+7):nth-child(-n+8) {
           display: none; } }
-      @media only screen and (max-width: 37.5em) {
-        .gallery__frame--items :nth-child(10) {
-          display: none; } }
+    @media only screen and (max-width: 75em) {
+      .gallery__frame--onerow :nth-child(n+5):nth-child(-n+5) {
+        display: none; } }
+    @media only screen and (max-width: 56.25em) {
+      .gallery__frame--onerow :nth-child(n+4):nth-child(-n+4) {
+        display: none; } }
+    @media only screen and (max-width: 37.5em) {
+      .gallery__frame--onerow :nth-child(n+4):nth-child(-n+4) {
+        display: inline-flex; } }
