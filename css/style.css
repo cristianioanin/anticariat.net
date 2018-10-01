@@ -455,8 +455,8 @@ body {
 
 @media only screen and (max-width: 37.5em) {
   #shopping-cart-preview {
-    width: 80% !important;
-    margin: 0 10%; } }
+    width: 100% !important;
+    margin: 0 auto; } }
 
 .row {
   max-width: 1000rem;
@@ -547,9 +547,6 @@ body {
   @media only screen and (max-width: 56.25em) {
     .left-pane {
       width: 24%; } }
-  @media only screen and (max-width: 37.5em) {
-    .left-pane {
-      width: 29%; } }
 
 .side-menu {
   width: 100%;
@@ -661,7 +658,7 @@ body {
       width: 75%; } }
   @media only screen and (max-width: 37.5em) {
     .right-pane {
-      width: 70%; } }
+      width: 100%; } }
 
 .gallery {
   width: 100%; }
@@ -702,6 +699,16 @@ body {
       @media only screen and (max-width: 56.25em) {
         .gallery__frame--items :nth-child(n+7):nth-child(-n+8) {
           display: none; } }
+      @media only screen and (max-width: 37.5em) {
+        .gallery__frame--items {
+          display: flex;
+          flex-wrap: nowrap;
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch; }
+          .gallery__frame--items::-webkit-scrollbar {
+            display: none; }
+          .gallery__frame--items .book {
+            flex: 0 0 auto; } }
     @media only screen and (max-width: 75em) {
       .gallery__frame--onerow :nth-child(n+5):nth-child(-n+5) {
         display: none; } }
@@ -711,3 +718,7 @@ body {
     @media only screen and (max-width: 37.5em) {
       .gallery__frame--onerow :nth-child(n+4):nth-child(-n+4) {
         display: inline-flex; } }
+
+@media only screen and (max-width: 37.5em) {
+  #left-pane {
+    display: none; } }

@@ -218,7 +218,7 @@
   }
 
   @include respond(phone) {
-    width: 80% !important;
-    margin: 0 10%;
+    width: 100% !important;
+    margin: 0 auto;
   }
 }

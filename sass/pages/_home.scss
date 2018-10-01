@@ -49,10 +49,6 @@
   @include respond(tab-portrait) {
     width: 24%;
   }
-
-  @include respond(phone) {
-    width: 29%;
-  }
 }
 
 .side-menu {
@@ -215,7 +211,7 @@
   }
 
   @include respond(phone) {
-    width: 70%;
+    width: 100%;
   }
 }
 
@@ -278,6 +274,21 @@
           display: none;
         }
       }
+
+      @include respond(phone) {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+
+        .book {
+          flex: 0 0 auto;
+        }
+      }
     }
 
     &--onerow {
@@ -299,5 +310,11 @@
         }
       }
     }
+  }
+}
+
+#left-pane {
+  @include respond(phone) {
+    display: none;
   }
 }
