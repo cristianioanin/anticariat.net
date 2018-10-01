@@ -13,6 +13,19 @@
   transform: translate(-50%, -50%);
 }
 
+@mixin animateLinkState($color) {
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color 50%);
+  background-size: 230%;
+  transition: all .4s;
+}
+
+@mixin animateHoverState($color) {
+  background-position: 100%;
+  color: $color;
+  transform: translateX(1rem);
+  font-weight: 700;
+}
+
 // MEDIA QUERY MANAGER
 /*
 0 - 600px:      Phone
@@ -32,6 +45,11 @@
   @if $breakpoint == tab-landscape {
     @media only screen and (max-width: 75em) { @content; }
   }
+
+  @if $breakpoint == desktop {
+    @media only screen and (max-width: 93.75em) { @content; }
+  }
+
   @if $breakpoint == big-desktop {
     @media only screen and (min-width: 112.5em) { @content; }
   }

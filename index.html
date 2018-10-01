@@ -24,17 +24,10 @@
       </div>
       <div class="navigation__main">
         <div class="row">
-          <div class="col-1-of-4">
+          <div class="col-1-of-4" id="main-logo">
             <a title="ANTICARIAT.NET" href="#"><img class="navigation__main--logo" src="images/logo_anticariat.svg" alt="ANTICARIAT.NET"></a>
           </div>
-          <div class="col-2-of-4">
-            <form class="navigation__main--search" action="https://www.anticariat.net/cautare-rezultate.php" method="GET">
-              <input type="text" name="t" placeholder="Caută aici după cuvinte cheie: titlu, autor, editură...">
-              <input type="submit" value="Caută">
-            </form>
-
-          </div>
-          <div class="col-1-of-4">
+          <div class="col-1-of-4" id="shopping-cart-preview">
             <div class="shopping-cart__preview">
               <div class="shopping-cart__preview--title">
                 <span>Coș de cumpărături</span>
@@ -49,6 +42,13 @@
                 <div class="shopping-cart__preview--content--articles"><span id="cart_articles">2</span> produse </div>
               </div>
             </div>
+          </div>
+          <div class="col-2-of-4" id="main-form-search">
+            <form class="navigation__main--search" action="https://www.anticariat.net/cautare-rezultate.php" method="GET">
+              <input type="text" name="t" placeholder="Caută aici după cuvinte cheie: titlu, autor, editură...">
+              <input type="submit" value="Caută">
+            </form>
+
           </div>
         </div>
       </div>
@@ -347,7 +347,7 @@
                       itemprop="name">Dictionar de antonime (Lizuka Educativ)</span></a>
                 </div>
                 <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b><span
-                        class=strike>12,00</span> <span class=red>8,40</span></b></span>
+                        class="book__price--crossed">12,00</span> <span class="book__price--promo">8,40</span></b></span>
                   <span itemprop="priceCurrency" content="RON">lei</span></div>
             </div>
             <div class="book" itemprop="itemListElement" itemscope itemtype="http://schema.org/Book" itemid="https://www.anticariat.net/p/194112/Dictionar-sinonime-Lizuka-Educativ-Alexandru-Emil">
@@ -361,7 +361,7 @@
                       itemprop="name">Dictionar de sinonime (Lizuka Educativ)</span></a>
                 </div>
                 <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b><span
-                        class=strike>17,00</span> <span class=red>11,90</span></b></span>
+                        class="book__price--crossed">17,00</span> <span class="book__price--promo">11,90</span></b></span>
                   <span itemprop="priceCurrency" content="RON">lei</span></div>
             </div>
             <div class="book" itemprop="itemListElement" itemscope itemtype="http://schema.org/Book" itemid="https://www.anticariat.net/p/194418/Dictionar-neologisme-Lizuka-Educativ-Alexandru-Emil">
@@ -375,7 +375,7 @@
                       itemprop="name">Dictionar de neologisme (Lizuka Educativ)</span></a>
                 </div>
                 <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b><span
-                        class=strike>23,00</span> <span class=red>16,10</span></b></span>
+                        class="book__price--crossed">23,00</span> <span class="book__price--promo">16,10</span></b></span>
                   <span itemprop="priceCurrency" content="RON">lei</span></div>
             </div>
             <div class="book" itemprop="itemListElement" itemscope itemtype="http://schema.org/Book" itemid="https://www.anticariat.net/p/201896/Dictionar-Omonime-Lizuka-Educativ-Alexandru-Emil">
@@ -389,7 +389,7 @@
                       itemprop="name">Dictionar de Omonime (Lizuka Educativ)</span></a>
                 </div>
                 <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b><span
-                        class=strike>18,00</span> <span class=red>12,60</span></b></span>
+                        class="book__price--crossed">18,00</span> <span class="book__price--promo">12,60</span></b></span>
                   <span itemprop="priceCurrency" content="RON">lei</span></div>
             </div>
             <div class="book" itemprop="itemListElement" itemscope itemtype="http://schema.org/Book" itemid="https://www.anticariat.net/p/225147/Dictionar-explicativ-scolar-Alexandru-Emil">
@@ -403,7 +403,7 @@
                       itemprop="name">Dictionar explicativ scolar</span></a>
                 </div>
                 <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b><span
-                        class=strike>25,00</span> <span class=red>17,50</span></b></span>
+                        class="book__price--crossed">25,00</span> <span class="book__price--promo">17,50</span></b></span>
                   <span itemprop="priceCurrency" content="RON">lei</span></div>
             </div>
           </div>
@@ -432,7 +432,7 @@
                       itemprop="name">Cenusa din ornic - Roman</span></a>
                 </div>
                 <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b><span
-                        class=strike>5,90</span> <span class=red>1,00</span></b></span>
+                        class="book__price--crossed">5,90</span> <span class="book__price--promo">1,00</span></b></span>
                   <span itemprop="priceCurrency" content="RON">lei</span></div>
             </div>
 
@@ -447,7 +447,7 @@
                       itemprop="name">Aurul negru</span></a>
                 </div>
                 <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b><span
-                        class=strike>9,90</span> <span class=red>1,00</span></b></span>
+                        class="book__price--crossed">9,90</span> <span class="book__price--promo">1,00</span></b></span>
                   <span itemprop="priceCurrency" content="RON">lei</span></div>
             </div>
 
@@ -462,7 +462,7 @@
                       itemprop="name">Educatie civica - manual pentru clasa a III-a</span></a>
                 </div>
                 <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b><span
-                        class=strike>5,90</span> <span class=red>1,00</span></b></span>
+                        class="book__price--crossed">5,90</span> <span class="book__price--promo">1,00</span></b></span>
                   <span itemprop="priceCurrency" content="RON">lei</span></div>
             </div>
             <div class="book" itemprop="itemListElement" itemscope itemtype="http://schema.org/Book" itemid="https://www.anticariat.net/p/136920/Vremelnicie-pierduta-Bogdan-Popescu">
@@ -476,7 +476,7 @@
                       itemprop="name">Vremelnicie pierduta</span></a>
                 </div>
                 <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b><span
-                        class=strike>5,90</span> <span class=red>1,00</span></b></span>
+                        class="book__price--crossed">5,90</span> <span class="book__price--promo">1,00</span></b></span>
                   <span itemprop="priceCurrency" content="RON">lei</span></div>
             </div>
             <div class="book" itemprop="itemListElement" itemscope itemtype="http://schema.org/Book" itemid="https://www.anticariat.net/p/136918/Scene-intime-Scene-masa-Miniaturi-hieroglife-Mihai-Maniutiu">
@@ -490,7 +490,7 @@
                       itemprop="name">Scene intime. Scene de masa - Miniaturi si hieroglife</span></a>
                 </div>
                 <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b><span
-                        class=strike>5,90</span> <span class=red>1,00</span></b></span>
+                        class="book__price--crossed">5,90</span> <span class="book__price--promo">1,00</span></b></span>
                   <span itemprop="priceCurrency" content="RON">lei</span></div>
             </div>
             <div class="book" itemprop="itemListElement" itemscope itemtype="http://schema.org/Book" itemid="https://www.anticariat.net/p/8652/Fluturele-focul-Per-Olof-Ekstrom">
@@ -504,7 +504,7 @@
                       itemprop="name">Fluturele si focul</span></a>
                 </div>
                 <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b><span
-                        class=strike>9,90</span> <span class=red>1,00</span></b></span>
+                        class="book__price--crossed">9,90</span> <span class="book__price--promo">1,00</span></b></span>
                   <span itemprop="priceCurrency" content="RON">lei</span></div>
             </div>
             <div class="book" itemprop="itemListElement" itemscope itemtype="http://schema.org/Book" itemid="https://www.anticariat.net/p/34386/miezul-afacerii-Dreyfus-Toader-Maurice-Baumont-Hacker">
@@ -518,7 +518,7 @@
                       itemprop="name">In miezul afacerii Dreyfus</span></a>
                 </div>
                 <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b><span
-                        class=strike>5,90</span> <span class=red>1,00</span></b></span>
+                        class="book__price--crossed">5,90</span> <span class="book__price--promo">1,00</span></b></span>
                   <span itemprop="priceCurrency" content="RON">lei</span></div>
             </div>
             <div class="book" itemprop="itemListElement" itemscope itemtype="http://schema.org/Book" itemid="https://www.anticariat.net/p/11621/Cintarea-Romaniei-Alecu-Russo">
@@ -532,7 +532,7 @@
                       itemprop="name">Cintarea Romaniei</span></a>
                 </div>
                 <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b><span
-                        class=strike>3,90</span> <span class=red>1,00</span></b></span>
+                        class="book__price--crossed">3,90</span> <span class="book__price--promo">1,00</span></b></span>
                   <span itemprop="priceCurrency" content="RON">lei</span></div>
             </div>
             <div class="book" itemprop="itemListElement" itemscope itemtype="http://schema.org/Book" itemid="https://www.anticariat.net/p/168965/Urologie-Valentin-Neagu">
@@ -547,7 +547,7 @@
                       itemprop="name">Urologie</span></a>
                 </div>
                 <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b><span
-                        class=strike>10,00</span> <span class=red>5,00</span></b></span>
+                        class="book__price--crossed">10,00</span> <span class="book__price--promo">5,00</span></b></span>
                   <span itemprop="priceCurrency" content="RON">lei</span></div>
             </div>
             <div class="book" itemprop="itemListElement" itemscope itemtype="http://schema.org/Book" itemid="https://www.anticariat.net/p/75643/Dragostea-revolutia-Volumul-lea-Cei-care-platesc-viata-Dinu-Sararu">
@@ -561,7 +561,7 @@
                       itemprop="name">Dragostea si revolutia, Volumul al II-lea - Cei care platesc cu viata</span></a>
                 </div>
                 <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b><span
-                        class=strike>12,90</span> <span class=red>1,00</span></b></span>
+                        class="book__price--crossed">12,90</span> <span class="book__price--promo">1,00</span></b></span>
                   <span itemprop="priceCurrency" content="RON">lei</span></div>
             </div>
           </div>
@@ -590,7 +590,7 @@
                       itemprop="name">Ion Creanga (Viata si opera)</span></a>
                 </div>
                 <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b><span
-                        class=strike>12,90</span> <span class=red>9,00</span></b></span>
+                        class="book__price--crossed">12,90</span> <span class="book__price--promo">9,00</span></b></span>
                   <span itemprop="priceCurrency" content="RON">lei</span></div>
             </div>
             <div class="book" itemprop="itemListElement" itemscope itemtype="http://schema.org/Book" itemid="https://www.anticariat.net/p/165598/Transmisiile-hidraulice-urmarire-masinilor-Traducere-din-limba-rusa-Basta">
@@ -606,7 +606,7 @@
                       rusa</span></a>
                 </div>
                 <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b><span
-                        class=strike>29,00</span> <span class=red>20,30</span></b></span>
+                        class="book__price--crossed">29,00</span> <span class="book__price--promo">20,30</span></b></span>
                   <span itemprop="priceCurrency" content="RON">lei</span></div>
             </div>
             <div class="book" itemprop="itemListElement" itemscope itemtype="http://schema.org/Book" itemid="https://www.anticariat.net/p/21004/floare-pentru-eternitate-Lucian-Penescu">
@@ -620,7 +620,7 @@
                       itemprop="name">O floare pentru eternitate</span></a>
                 </div>
                 <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b><span
-                        class=strike>5,90</span> <span class=red>4,10</span></b></span>
+                        class="book__price--crossed">5,90</span> <span class="book__price--promo">4,10</span></b></span>
                   <span itemprop="priceCurrency" content="RON">lei</span></div>
             </div>
             <div class="book" itemprop="itemListElement" itemscope itemtype="http://schema.org/Book" itemid="https://www.anticariat.net/p/186353/Instalatii-cladiri-Materiale-aparate-pentru-instalatii-sanitare-Aurel-Simonetti">
@@ -635,7 +635,7 @@
                       itemprop="name">Instalatii in cladiri - Materiale si aparate pentru instalatii sanitare</span></a>
                 </div>
                 <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b><span
-                        class=strike>29,00</span> <span class=red>20,30</span></b></span>
+                        class="book__price--crossed">29,00</span> <span class="book__price--promo">20,30</span></b></span>
                   <span itemprop="priceCurrency" content="RON">lei</span></div>
             </div>
             <div class="book" itemprop="itemListElement" itemscope itemtype="http://schema.org/Book" itemid="https://www.anticariat.net/p/66090/Catalina-Somerset-Maugham">
@@ -650,7 +650,7 @@
                       itemprop="name">Catalina</span></a>
                 </div>
                 <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b><span
-                        class=strike>9,90</span> <span class=red>6,90</span></b></span>
+                        class="book__price--crossed">9,90</span> <span class="book__price--promo">6,90</span></b></span>
                   <span itemprop="priceCurrency" content="RON">lei</span></div>
             </div>
             <div class="book" itemprop="itemListElement" itemscope itemtype="http://schema.org/Book" itemid="https://www.anticariat.net/p/55193/Radio-televiziune-Intrebari-raspunsuri-HELLYER">
@@ -664,7 +664,7 @@
                       itemprop="name">Radio si televiziune. Intrebari si raspunsuri</span></a>
                 </div>
                 <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b><span
-                        class=strike>9,90</span> <span class=red>6,90</span></b></span>
+                        class="book__price--crossed">9,90</span> <span class="book__price--promo">6,90</span></b></span>
                   <span itemprop="priceCurrency" content="RON">lei</span></div>
             </div>
             <div class="book" itemprop="itemListElement" itemscope itemtype="http://schema.org/Book" itemid="https://www.anticariat.net/p/156906/Structuri-arborescente-aplicatiile-lor-Clara-Ionescu-Texe-Ioan-Szako">
@@ -678,7 +678,7 @@
                       itemprop="name">Structuri arborescente cu aplicatiile lor</span></a>
                 </div>
                 <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b><span
-                        class=strike>25,00</span> <span class=red>17,50</span></b></span>
+                        class="book__price--crossed">25,00</span> <span class="book__price--promo">17,50</span></b></span>
                   <span itemprop="priceCurrency" content="RON">lei</span></div>
             </div>
             <div class="book" itemprop="itemListElement" itemscope itemtype="http://schema.org/Book" itemid="https://www.anticariat.net/p/27544/Puntea-aur-opiniile-unei-mame-pentru-parinti-Emilia-Caldararu">
@@ -692,7 +692,7 @@
                       itemprop="name">Puntea de aur - opiniile unei mame pentru parinti -</span></a>
                 </div>
                 <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b><span
-                        class=strike>5,90</span> <span class=red>4,10</span></b></span>
+                        class="book__price--crossed">5,90</span> <span class="book__price--promo">4,10</span></b></span>
                   <span itemprop="priceCurrency" content="RON">lei</span></div>
             </div>
             <div class="book" itemprop="itemListElement" itemscope itemtype="http://schema.org/Book" itemid="https://www.anticariat.net/p/33918/Marea-conjuratie-impotriva-lui-Hitler-Maurice-Baumont">
@@ -706,7 +706,7 @@
                       itemprop="name">Marea conjuratie impotriva lui Hitler</span></a>
                 </div>
                 <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b><span
-                        class=strike>9,90</span> <span class=red>6,90</span></b></span>
+                        class="book__price--crossed">9,90</span> <span class="book__price--promo">6,90</span></b></span>
                   <span itemprop="priceCurrency" content="RON">lei</span></div>
             </div>
             <div class="book" itemprop="itemListElement" itemscope itemtype="http://schema.org/Book" itemid="https://www.anticariat.net/p/162026/Indrumatorul-proiectantului-tehnologii-turnatorii-Volumul-Valeriu-Dumitrescu-Claudiu-Stefanescu-Constantin">
@@ -720,7 +720,7 @@
                       itemprop="name">Indrumatorul proiectantului de tehnologii in turnatorii, Volumul I</span></a>
                 </div>
                 <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b><span
-                        class=strike>49,00</span> <span class=red>34,30</span></b></span>
+                        class="book__price--crossed">49,00</span> <span class="book__price--promo">34,30</span></b></span>
                   <span itemprop="priceCurrency" content="RON">lei</span></div>
             </div>
           </div>
@@ -736,16 +736,21 @@
 
   <div class="container">
     <div class="footer">
-      <a title="Categorii" href="/categorii">Categorii</a> |
-      <a href="/informatii.php">Despre noi</a> |
-      <a href="/contact" title="Informatii despre noi">Contact</a> |
-      <a href="/informatii-transport-plata.php">Livrare si plata</a>
-      <br>
-      <a href="/termeni.php" title="Termeni si conditii">Termeni &#351;i condi&#355;ii</a> |
-      <a href="http://www.anpc.gov.ro/" rel="nofollow" target="_blank">ANPC</a>
-      <br>
-      <span>&copy; 2018 <a title="ANTICARIAT NET S.R.L." href="https://www.anticariat.net/"><b>ANTICARIAT NET S.R.L.</b></a></span>
+      <div class="footer__main">
+        <a title="Categorii" href="/categorii">Categorii</a>
+        <a href="/informatii.php">Despre noi</a>
+        <a href="/contact" title="Informatii despre noi">Contact</a>
+        <a href="/informatii-transport-plata.php">Livrare și plată</a>
+      </div>
+      <div class="footer__secondary">
+        <a href="/termeni.php" title="Termeni si conditii">Termeni și condiții</a>
+        <a href="http://www.anpc.gov.ro/" rel="nofollow" target="_blank">ANPC</a>
+      </div>
+      <span class="footer__copyright">&copy; 2018 <a title="ANTICARIAT NET S.R.L." href="https://www.anticariat.net/"><b>ANTICARIAT
+            NET S.R.L.</b></a></span>
     </div>
+
+
   </div>
 
   <script src="index.js"></script>

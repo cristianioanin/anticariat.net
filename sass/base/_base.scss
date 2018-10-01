@@ -27,12 +27,12 @@ body {
   padding: 0 3rem;
 
   @include respond(tab-portrait) {
-    padding: 0 1rem;
+    padding: 0;
   }
 }
 
 .container {
-  width: 90vw;
+  max-width: 140rem;
   margin: 0 auto;
 
   @include respond(tab-portrait) {

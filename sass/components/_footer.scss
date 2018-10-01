@@ -1,0 +1,56 @@
+.footer {
+  background-color: $color-grey-light-2;
+  color: $color-black;
+  width: 100%;
+  font-size: $default-font-size;
+  text-align: center;
+  margin-top: 5rem;
+  padding-top: 1rem;
+
+  &__main a {
+    display: inline-block;
+    font-weight: 700;
+
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $color-grey-dark-3;
+      padding: 0 2rem;
+      @include animateLinkState($color-white);
+    }
+
+    &:hover,
+    &:active {
+      @include animateHoverState($color-primary);
+    }
+  }
+
+  &__secondary {
+    padding-top: 1rem;
+    font-size: 1.8rem;
+
+    & a {
+      text-decoration: none;
+      color: $color-grey-dark-3;
+      padding: 0 2rem;
+      display: inline-block;
+
+      &:link,
+      &:visited {
+        @include animateLinkState($color-white);
+      }
+  
+      &:hover,
+      &:active {
+        @include animateHoverState($color-primary);
+      }
+    }
+  }
+
+  &__copyright a {
+    padding-bottom: 2rem;
+    text-decoration: none;
+    color: $color-primary;
+    font-size: 1.8rem;
+  }
+}
