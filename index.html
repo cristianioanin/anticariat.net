@@ -17,6 +17,17 @@
   <div class="container">
     <div class="navigation">
       <div class="navigation__top">
+        <!-- Side-menu toggle on phone -->
+        <span class="side-menu__open">
+          <a href="#" onclick="slideMenu.open()">
+            <svg width="35" height="35">
+              <path d="M10,5 35,5" stroke="#333" stroke-width=".3rem" />
+              <path d="M12,12 33,12" stroke="#333" stroke-width=".3rem" />
+              <path d="M10,19 35,19" stroke="#333" stroke-width=".3rem" />
+            </svg>
+          </a>
+        </span>
+        <!-- END - Side-menu toggle on phone -->
         <a class="navigation__link" title="Clienti - administrare" href="https://www.anticariat.net/clienti_admin.php">Cont
           client</a>
         <a class="navigation__link" title="Formular de contact, numere de telefon, adresa noastra" href="https://www.anticariat.net/informatii-contact.php">Contact</a>
@@ -77,7 +88,9 @@
     </div>
 
     <div class="left-pane" id="left-pane">
-
+      <!-- Close left-side menu button -->
+      <a href="#" class="side-menu__close" onclick="slideMenu.close()">&CircleTimes;</a>
+      <!-- END - Close left-side menu button -->
       <div class="side-menu">
         <div class="side-menu__title">CATEGORII</div>
         <div class="side-menu__items" id="side-menu__categories">

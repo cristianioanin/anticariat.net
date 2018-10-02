@@ -54,7 +54,8 @@ html {
 
 body {
   box-sizing: border-box;
-  padding: 0 3rem; }
+  padding: 0 3rem;
+  overflow-x: hidden; }
   @media only screen and (max-width: 56.25em) {
     body {
       padding: 0; } }
@@ -431,6 +432,12 @@ body {
       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
       transform: translateY(0); }
 
+.side-menu__open {
+  display: none; }
+  @media only screen and (max-width: 37.5em) {
+    .side-menu__open {
+      display: inline-block; } }
+
 @media only screen and (max-width: 75em) {
   #main-logo {
     width: 40% !important; } }
@@ -540,7 +547,8 @@ body {
 .left-pane {
   width: 19%;
   display: inline-block;
-  vertical-align: top; }
+  vertical-align: top;
+  background: #fff; }
   @media only screen and (max-width: 75em) {
     .left-pane {
       width: 19%; } }
@@ -555,6 +563,21 @@ body {
   border-bottom: 1px solid #000;
   background-color: #eee;
   margin-top: 3rem; }
+  .side-menu__close {
+    position: absolute;
+    top: 0;
+    left: 19.5rem;
+    font-size: 4rem;
+    color: #C10202;
+    text-decoration: none;
+    z-index: 3;
+    height: 5rem;
+    width: 5rem;
+    transition: all .4s;
+    display: none; }
+    @media only screen and (max-width: 37.5em) {
+      .side-menu__close {
+        display: block; } }
   .side-menu__title {
     background-color: #f7f7f7;
     color: #C10202;
@@ -721,4 +744,16 @@ body {
 
 @media only screen and (max-width: 37.5em) {
   #left-pane {
-    display: none; } }
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    opacity: 0.95;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    transition: all .4s; } }

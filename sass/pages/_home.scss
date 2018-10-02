@@ -41,6 +41,7 @@
   width: 19%;
   display: inline-block;
   vertical-align: top;
+  background: $color-white;
 
   @include respond(tab-landscape) {
     width: 19%;
@@ -58,6 +59,26 @@
   border-bottom: 1px solid $color-black;
   background-color: $color-grey-light-2;
   margin-top: 3rem;
+
+  &__close {
+    position: absolute;
+    top: 0;
+    left: 19.5rem;
+    font-size: 4rem;
+    color: $color-primary;
+    text-decoration: none;
+    z-index: 3;
+    height: 5rem;
+    width: 5rem;
+
+    transition: all .4s;
+
+    display: none;
+
+    @include respond(phone) {
+      display: block;
+    }
+  }
 
 
   &__title {
@@ -315,6 +336,19 @@
 
 #left-pane {
   @include respond(phone) {
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    opacity: 0.95;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    
+    transition: all .4s;
   }
 }

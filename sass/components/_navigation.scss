@@ -190,6 +190,14 @@
   }
 }
 
+.side-menu__open {
+  display: none;
+
+  @include respond(phone) {
+    display: inline-block;
+  }
+}
+
 #main-logo {
   @include respond(tab-landscape) {
     width: 40% !important;
