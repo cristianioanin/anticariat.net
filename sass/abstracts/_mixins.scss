@@ -53,4 +53,12 @@
   @if $breakpoint == big-desktop {
     @media only screen and (min-width: 112.5em) { @content; }
   }
+
+  @if $breakpoint == revert-from-phone {
+    @media only screen and (min-width: 37.5em) and (max-width: 56.25em) { @content; }
+  }
+
+  @if $breakpoint == revert-from-tab {
+    @media only screen and (min-width: 56.25em) { @content; }
+  }
 }

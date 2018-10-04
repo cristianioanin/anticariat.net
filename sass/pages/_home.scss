@@ -121,10 +121,9 @@
   }
 
   &__more {
+    text-align: right;
+    padding: 0 .5rem;
     &--link {
-      display: block;
-      margin-left: 60%;
-
       &:link,
       &:visited {
         padding: .5rem;
@@ -157,6 +156,7 @@
   &__subscription {
     color: $color-grey-dark-3;
     padding: 1rem;
+    position: relative;
 
     & input[type=email] {
       display: block;
@@ -177,7 +177,6 @@
     }
 
     & input[type=submit] {
-      margin-left: 65%;
       margin-top: 1rem;
       background-color: $color-primary;
       color: $color-white;
@@ -185,6 +184,8 @@
       padding: .5rem;
       border-radius: 4px;
       transition: all .3s;
+      position: relative;
+      right: -50%;
 
       &:hover {
         transform: translateY(-.3rem);
@@ -197,6 +198,8 @@
         box-shadow: 0 .5rem 1rem rgba($color-black,.15);
         transform: translateY(0);
       }
+
+      // @include respond()
     }
   }
 
@@ -260,7 +263,7 @@
     }
 
     &--title { 
-      width: 50%;  
+      width: 80%;  
       padding-left: 1rem;  
       float: left;
 
@@ -283,20 +286,10 @@
       width: 100%;
       display: flex;
       flex-wrap: wrap;
+    }
 
+    &--slideshow {
       @include respond(tab-landscape) {
-        & :nth-child(n+9):nth-child(-n+10) {
-          display: none;
-        }
-      }
-    
-      @include respond(tab-portrait) {
-        & :nth-child(n+7):nth-child(-n+8) {
-          display: none;
-        }
-      }
-
-      @include respond(phone) {
         display: flex;
         flex-wrap: nowrap;
         overflow-x: auto;
@@ -311,26 +304,6 @@
         }
       }
     }
-
-    &--onerow {
-      @include respond(tab-landscape) {
-        & :nth-child(n+5):nth-child(-n+5) {
-          display: none;
-        }
-      }
-    
-      @include respond(tab-portrait) {
-        & :nth-child(n+4):nth-child(-n+4) {
-          display: none;
-        }
-      }
-
-      @include respond(phone) {
-        & :nth-child(n+4):nth-child(-n+4) {
-          display: inline-flex;
-        }
-      }
-    }
   }
 }
 
@@ -341,7 +314,7 @@
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 2;
+    z-index: 5;
     top: 0;
     left: 0;
     opacity: 0.95;
@@ -350,5 +323,13 @@
     -webkit-overflow-scrolling: touch;
     
     transition: all .4s;
+  }
+
+  @include respond(revert-from-phone) {
+    width: 24% !important;
+  }
+
+  @include respond(revert-from-tab) {
+    width: 19% !important;
   }
 }

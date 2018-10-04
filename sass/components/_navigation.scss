@@ -8,6 +8,11 @@
     text-transform: uppercase;
     font-size: 1.6rem;
     font-weight: 700;
+
+    @include respond(phone) {
+      position: fixed;
+      z-index: 4;
+    }
   }
 
   &__link {
