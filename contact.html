@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="language" content="RO">
+  <title>ANTICARIAT.NET - Cartile vechi pe care le cauti, la preturi minime!</title>
+  <link href="https://fonts.googleapis.com/css?family=Lobster|PT+Sans:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta name="description" content="ANTICARIAT.NET este anticariatul unde gasiti cele mai multe carti vechi din toate domeniile. Zilnic stocul nostru de carte este actualizat.">
+</head>
+
+<body>
+  <div class="container">
+    <div class="navigation">
+      <div class="navigation__top">
+        <!-- Side-menu toggle on phone -->
+        <span class="side-menu__open">
+          <a href="#" onclick="slideMenu.open()">
+            <svg width="35" height="35">
+              <path d="M10,5 35,5" stroke="#333" stroke-width=".3rem" />
+              <path d="M12,12 33,12" stroke="#333" stroke-width=".3rem" />
+              <path d="M10,19 35,19" stroke="#333" stroke-width=".3rem" />
+            </svg>
+          </a>
+        </span>
+        <!-- END - Side-menu toggle on phone -->
+        <a class="navigation__link" title="Clienti - administrare" href="https://www.anticariat.net/clienti_admin.php">Cont
+          client</a>
+        <a class="navigation__link" title="Formular de contact, numere de telefon, adresa noastra" href="./contact.html">Contact</a>
+        <a class="navigation__link" title="Informatii despre noi" href="./info.html">Info</a>
+      </div>
+      <div class="navigation__main">
+        <div class="row">
+          <div class="col-1-of-4" id="main-logo">
+            <a title="ANTICARIAT.NET" href="#"><img class="navigation__main--logo" src="images/logo_anticariat.svg" alt="ANTICARIAT.NET"></a>
+          </div>
+          <div class="col-1-of-4" id="shopping-cart-preview">
+            <div class="shopping-cart__preview">
+              <div class="shopping-cart__preview--title">
+                <span>Coș de cumpărături</span>
+              </div>
+              <div class="shopping-cart__preview--icon">
+                <a title="COS CUMPARATURI" href="https://www.anticariat.net/cos.php"><i class="material-icons md-48 white">
+                    shopping_cart
+                  </i></a>
+              </div>
+              <div class="shopping-cart__preview--content">
+                <div class="shopping-cart__preview--content--amount"><span id="cart_amount">30</span> lei</div>
+                <div class="shopping-cart__preview--content--articles"><span id="cart_articles">2</span> produse </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-2-of-4" id="main-form-search">
+            <form class="navigation__main--search" action="https://www.anticariat.net/cautare-rezultate.php" method="GET">
+              <input type="text" name="t" placeholder="Caută aici după cuvinte cheie: titlu, autor, editură...">
+              <input type="submit" value="Caută">
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="header__promo">
+      <div class="navigation__motto">
+        <p class="navigation__motto--paragraph">
+          <span>Cărţile vechi pe care le cauţi, la preţuri minime!</span>
+        </p>
+      </div>
+      <div class="header__promo--item">
+        <a href='https://www.anticariat.net/c/1986/carte-straina'>Carte de import</a>
+      </div>
+      <div class="header__promo--item">
+        <a href='https://www.anticariat.net/c/7/stiinta-tehnica'>Carte tehnică</a>
+      </div>
+      <div class="header__promo--item">
+        <a href='https://www.anticariat.net/c/54/medicina-sanatate'>Medicină</a>
+      </div>
+      <div class="header__promo--item">
+        <a href='https://www.anticariat.net/promotii'>PROMOȚII</a>
+      </div>
+    </div>
+
+    <div class="left-pane" id="left-pane">
+      <a href="#" class="side-menu__close" onclick="slideMenu.close()">&CircleTimes;</a>
+
+      <div class="side-menu">
+        <div class="side-menu__title">INFORMA&#354;II</div>
+        <div class="side-menu__items" id="side-menu__categories"><a class="side-menu__item" title="" href="/informatii-contact.php">Contact</a><a
+            class="side-menu__item" title="" href="/informatii-comanda.php">Comanda</a><a class="side-menu__item" title=""
+            href="/informatii-transport-plata.php">Livrare &#351;i plata</a><a class="side-menu__item" title="" href="/informatii-comenzi-externe.php">Comenzi
+            externe</a><a class="side-menu__item" title="" href="/informatii-despre-noi.php">Despre noi</a></div>
+      </div>
+    </div>
+    <div class="right-pane">
+      <div class="gallery__frame">
+        <div class="gallery__frame--header">
+          <h2><a title="Informatii despre ANTICARIAT.NET" href="/informatii.php">INFORMA&#354;II</a> &raquo;
+            Contactați-ne</h2>
+        </div>
+        <div class="info">
+          <div class="info__headline">
+            <p>Contacta&#355;i-ne folosind formularul de mai jos. Introduceti emailul sau telefonul dumneavoastra
+              pentru a va putea raspunde:
+
+              <p>
+          </div>
+          <div class="container">
+            <div class="form">
+              <form name="RForm" action="informatii-contact-trimite.php" method="post" onsubmit="return testRForm()">
+                <input type="hidden" name="id" class="text" value="4">
+                <div class="form__group">
+                  <input class="form__input" type="email" name="email" placeholder="Email" id="email">
+                  <label class="form__label" for="email">Email</label>
+                </div>
+                <div class="form__group">
+                  <input class="form__input" type="tel" name="telefon" placeholder="Telefon" id="phone" pattern="[0-9]{10}">
+                  <label class="form__label" for="phone">Telefon</label>
+                </div>
+                <div class="form__group">
+                  <textarea class="form__input" name="mesaj" rows="6" id="message" placeholder="Scrie mesajul tău aici..."></textarea>
+                </div>
+                <div class="form__group">
+                  <input class="form__input" type="text" name="cod_validare" placeholder="Introduce&#355;i cifrele din imagine:">
+                  <label class="form__label" for="validate">Introduce&#355;i cifrele din imagine:</label>
+                  <img align="absmiddle" src="">
+                </div>
+                <div class="form__group">
+                  <button class="btn btn-text btn-submit" type=submit> Trimite</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="info__card u-margin-top-big">
+          <strong>Numere de telefon</strong>
+          <hr>
+          <p> &nbsp; 0351/405.223 (rcs/rds) - comenzi noi, detalii comenzi actuale</p>
+          <p class="u-margin-bottom-small">Program telefoane: 09-17, Luni - Vineri (cu excep&#355;ia
+            s&#259;rb&#259;torilor legale)</p>
+
+          <strong>&raquo; Adresa po&#351;tal&#259;</strong>
+          <hr>
+          <p>Str. Bariera Vilcii nr. 259</p>
+          <p>Craiova 200008, jud. Dolj, Romania</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="footer">
+      <div class="footer__main">
+        <a title="Categorii" href="https://test.anticariat.net/categorii">Categorii</a>
+        <a href="https://test.anticariat.net/informatii.php">Despre noi</a>
+        <a href="https://test.anticariat.net/contact" title="Informatii despre noi">Contact</a>
+        <a href="https://test.anticariat.net/informatii-transport-plata.php">Livrare si plata</a>
+      </div>
+      <div class="footer__secondary">
+        <a href="https://test.anticariat.net/termeni.php" title="Termeni si conditii">Termeni si conditii</a>
+        <a href="http://www.anpc.gov.ro/" rel="nofollow" target="_blank">ANPC</a>
+      </div>
+      <span class="footer__copyright">&copy; 2018 <a title="ANTICARIAT NET S.R.L." href="https://test.anticariat.net"><b>ANTICARIAT
+            NET S.R.L.</b></a></span>
+    </div>
+  </div>
+
+</body>
+
+</html>
