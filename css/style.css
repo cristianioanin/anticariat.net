@@ -142,7 +142,7 @@ body {
       width: calc((100% - 12rem) / 3); } }
   @media only screen and (max-width: 37.5em) {
     .book {
-      width: calc((100% - 10rem) / 3); } }
+      width: calc((100% - 12rem) / 2); } }
   .book__cover {
     height: 20rem;
     width: 100%;
@@ -308,14 +308,21 @@ body {
 
 .form {
   width: 100%;
-  padding: 3rem 5rem;
+  padding: 3rem 5rem 3rem 2rem;
+  margin: 0 auto;
   text-align: left;
   color: #000; }
   .form__group {
-    width: 50%;
+    width: 60%;
     margin: 0 auto; }
     .form__group:not(:last-child) {
       margin-bottom: 2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .form__group {
+        width: 75%; } }
+    @media only screen and (max-width: 37.5em) {
+      .form__group {
+        width: 90%; } }
   .form__input {
     width: 100%;
     font-family: inherit;
@@ -329,9 +336,6 @@ body {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
     display: block;
     transition: all .3s; }
-    @media only screen and (max-width: 56.25em) {
-      .form__input {
-        width: 100%; } }
     .form__input:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);

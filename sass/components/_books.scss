@@ -24,7 +24,7 @@
   }
 
   @include respond(phone) {
-    width: calc((100% - 10rem) / 3);
+    width: calc((100% - 12rem) / 2);
   }
 
   &__cover {

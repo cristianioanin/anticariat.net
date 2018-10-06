@@ -1,14 +1,23 @@
 .form {
   width: 100%;
-  padding: 3rem 5rem;
+  padding: 3rem 5rem 3rem 2rem;
+  margin: 0 auto;
   text-align: left;
   color: $color-black;
 
   &__group {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
     &:not(:last-child) {
       margin-bottom: 2rem;
+    }
+
+    @include respond(tab-portrait) {
+      width: 75%;
+    }
+    
+    @include respond(phone) {
+      width: 90%;
     }
   }
 
@@ -26,10 +35,6 @@
 
     display: block;
     transition: all .3s;
-
-    @include respond(tab-portrait) {
-      width: 100%;
-    }
 
     &:focus {
       outline: none;
