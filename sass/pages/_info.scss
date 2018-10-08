@@ -9,6 +9,17 @@
     color: $color-grey-dark-2;
   }
 
+  &__headline--nav {
+    text-align: left;
+    
+    & a:link,
+    & a:visited {
+      color: $color-primary-light;
+      text-decoration: none;
+      font-size: $default-font-size;
+    }
+  }
+
   &__card {
     margin-top: 3rem;
     padding: 1rem;

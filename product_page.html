@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="language" content="RO">
+  <title>ANTICARIAT.NET - Cartile vechi pe care le cauti, la preturi minime!</title>
+  <link href="https://fonts.googleapis.com/css?family=Lobster|PT+Sans:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta name="description" content="ANTICARIAT.NET este anticariatul unde gasiti cele mai multe carti vechi din toate domeniile. Zilnic stocul nostru de carte este actualizat.">
+</head>
+
+<body>
+  <div class="container">
+    <div class="navigation">
+      <div class="navigation__top">
+        <!-- Side-menu toggle on phone -->
+        <span class="side-menu__open">
+          <a href="#" onclick="slideMenu.open()">
+            <svg width="35" height="35">
+              <path d="M10,5 35,5" stroke="#333" stroke-width=".3rem" />
+              <path d="M12,12 33,12" stroke="#333" stroke-width=".3rem" />
+              <path d="M10,19 35,19" stroke="#333" stroke-width=".3rem" />
+            </svg>
+          </a>
+        </span>
+        <!-- END - Side-menu toggle on phone -->
+
+        <a class="navigation__link" title="Clienti - administrare" href="https://test.anticariat.net/clienti_admin.php">Cont
+          client</a>
+        <a class="navigation__link" title="Formular de contact, numere de telefon, adresa noastra" href="https://test.anticariat.net/informatii-contact.php">Contact</a>
+        <a class="navigation__link" title="Informatii despre noi" href="https://test.anticariat.net/informatii.php">Info</a>
+      </div>
+      <div class="navigation__main">
+        <div class="row">
+          <div class="col-1-of-4" id="main-logo">
+            <a title="ANTICARIAT.NET" href="https://test.anticariat.net"><img class="navigation__main--logo" src="https://test.anticariat.net/img/logo/logo_anticariat.svg"
+                alt="ANTICARIAT.NET"></a>
+          </div>
+          <div class="col-1-of-4" id="shopping-cart-preview">
+            <div class="shopping-cart__preview">
+              <div class="shopping-cart__preview--title">
+                <span>Cos de cumpărături</span>
+              </div>
+              <div class="shopping-cart__preview--icon">
+                <a title="COS CUMPARATURI" href="https://test.anticariat.net/cos.php"><i class="material-icons md-48 white">
+                    shopping_cart
+                  </i></a>
+              </div>
+              <div class="shopping-cart__preview--content">
+                <div class="shopping-cart__preview--content--amount"><span id="cart_amount">0</span> lei</div>
+                <div class="shopping-cart__preview--content--articles"><span id="cart_articles"></span> produse </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-2-of-4" id="main-form-search">
+            <form class="navigation__main--search" action="https://test.anticariat.net/cautare-rezultate.php" method="GET">
+              <input type="text" name="t" placeholder="Caută aici după cuvinte cheie: titlu, autor, editură...">
+              <input type="submit" value="Caută">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="header__promo">
+      <div class="navigation__motto">
+        <p class="navigation__motto--paragraph">
+          <span>Cărţile vechi pe care le cauţi, la preţuri minime!</span>
+        </p>
+      </div>
+      <div class="header__promo--item">
+        <a href='https://test.anticariat.net/c/1986/carte-straina'>Carte de import</a>
+      </div>
+      <div class="header__promo--item">
+        <a href='https://test.anticariat.net/c/7/stiinta-tehnica'>Carte tehnică</a>
+      </div>
+      <div class="header__promo--item">
+        <a href='https://test.anticariat.net/c/54/medicina-sanatate'>Medicină</a>
+      </div>
+      <div class="header__promo--item">
+        <a href='https://test.anticariat.net/promotii'>PROMOTII</a>
+      </div>
+    </div>
+
+    <div class="right-pane" itemscope itemtype="http://schema.org/Book" itemid="https://test.anticariat.net/p/253103/Vulturul-Volumul-lea-Radu-Theodoru">
+      <div class="info">
+        <div class="info__headline">
+          <span itemprop="url" content="https://test.anticariat.net/p/253103/Vulturul-Volumul-lea-Radu-Theodoru"></span>
+          <div class="info__headline--nav" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+              <a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="https://test.anticariat.net" itemid="https://test.anticariat.net">
+                <span itemprop="name">Carti</span>
+              </a>
+              <meta itemprop="position" content="1" />
+            </span> &gt;
+            <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+              <a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="/c/3/beletristica-critica" itemid="/c/3/beletristica-critica">
+                <span itemprop="name">Beletristica si critica</span>
+              </a>
+              <meta itemprop="position" content="2" />
+            </span> &gt;
+            <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+              <a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="/c/156/roman-istoric" itemid="/c/156/roman-istoric">
+                <span itemprop="name">Roman istoric</span>
+              </a>
+              <meta itemprop="position" content="3" />
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main division for PRODUCT -->
+      <div class="product-pane">
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="product-pane__cover">
+              <a target="_blank" href="https://www.anticariat.net/coperta/vulturul-volumul-lea-253103.jpg" rel="thumbnail"
+                title="Vulturul, Volumul al II-lea"><img class="product-pane__image" alt="Vulturul, Volumul al II-lea"
+                  itemprop="image" src="https://www.anticariat.net/coperta/vulturul-volumul-lea-253103.jpg"></a>
+            </div>
+          </div>
+
+          <div class="col-2-of-3">
+            <div class="product-pane__specifications">
+              <h1><span itemprop="name">Vulturul, Volumul al II-lea</span></h1>
+              <p>
+                <strong>Autor(i):</strong> <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                  <a class="btn-text" title="Radu Theodoru" itemprop="url" href="https://test.anticariat.net/autor/3193/radu-theodoru"><span
+                      itemprop="name">Radu Theodoru</span></a>
+                </span>
+              </p>
+              <p>
+                <strong>Editura:</strong> <span itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+                  <a class="btn-text" title="Editura Militara" itemprop="url" href="https://test.anticariat.net/editura/Militara"><span
+                      itemprop="name">Militara</span></a>
+                </span>
+              </p>
+              <p>
+                <strong>Anul aparitiei:</strong> <span itemprop='copyrightYear'>1972</span>
+              </p>
+              <p>
+                <strong>Nr. pagini:</strong> <span itemprop="numberOfPages">500</span> pagini
+              </p>
+              <p>
+                <strong>Stare:</strong> de anticariat (foarte buna)
+              </p>
+              <p>
+                <strong>Categorii:</strong> <a class="btn-text" href="/c/156/roman-istoric"><span itemprop="genre">Roman
+                    istoric</span></a>,
+                <a class="btn-text" href="/c/3/beletristica-critica"><span itemprop="genre">Beletristica si critica</span></a>
+              </p>
+            </div>
+
+            <div class="product-pane__cta">
+              <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                <p>
+                  <strong>Disponibilitate:</strong>
+                  &nbsp;<span itemprop="availability">in stoc</span>
+                </p>
+                <p>
+                  <strong>Pret:</strong>
+                  &nbsp;<span itemprop="price" content="19">19,00</span> <span itemprop="priceCurrency" content="RON">LEI</span>
+                </p>
+                <div onclick="document.location='/produs.php?action_cos=cos_action_adauga&idc=253103&id=253103'" class="product-pane__cta--buy"><a
+                    title="ADAUGA IN COS" href="/produs.php?action_cos=cos_action_adauga&idc=253103&id=253103"><span>Comandă
+                      <i class="material-icons md-48 white">
+                        add_shopping_cart
+                      </i></span></a></div>
+              </div>
+              <div>
+                <a class="btn-text" href="/informatii-transport-plata.php">Modalitati de transport:</a>
+                <br>&#149; 9,90 lei - prin Posta Romana (gratuit peste 39,00 lei /comanda )<br>&#149; 11,90 lei -
+                prin Urgent Cargus (gratuit peste 59,00 lei /comanda )
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END: Main division for PRODUCT -->
+
+      <div class="gallery__frame">
+        <div class="gallery__frame--header">
+          <div class="gallery__frame--title">
+            <h1>Alte carti de <b><a title="Carti Radu Theodoru" href="https://test.anticariat.net/autor/3193/radu-theodoru">RADU
+                  THEODORU</a></b>:</h1>
+          </div>
+        </div>
+        <div class="gallery__frame--items gallery__frame--slideshow">
+          <div class="book" itemprop="itemListElement" itemscope itemtype="http://schema.org/Book" itemid="https://test.anticariat.net/p/253108/Brazda-palos-Volumul-Radu-Theodoru">
+            <span itemprop="position" content="0">
+              <div>
+                <a title="Brazda si palos, Volumul I" href="https://test.anticariat.net/p/253108/Brazda-palos-Volumul-Radu-Theodoru">
+                  <img class="book__cover" itemprop="image" src="https://www.anticariat.net/coperta/brazda-palos-volumul-253108.jpg">
+                </a>
+              </div>
+              <div class="book__title">
+                <a title="Brazda si palos, Volumul I" itemprop="url" href="https://test.anticariat.net/p/253108/Brazda-palos-Volumul-Radu-Theodoru">
+                  <span itemprop="name">Brazda si palos, Volumul I</span>
+                </a>
+              </div>
+              <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b>25,00</b></span>
+                <span itemprop="priceCurrency" content="RON">lei</span>
+              </div>
+          </div>
+          <div class="book" itemprop="itemListElement" itemscope itemtype="http://schema.org/Book" itemid="https://test.anticariat.net/p/217044/Vulturul-Volumul-III-lea-Radu-Theodoru">
+            <span itemprop="position" content="0">
+              <div>
+                <a title="Vulturul, Volumul al III-lea" href="https://test.anticariat.net/p/217044/Vulturul-Volumul-III-lea-Radu-Theodoru">
+                  <img class="book__cover" itemprop="image" src="https://www.anticariat.net/coperta/vulturul-volumul-iii-217044.jpg">
+                </a>
+              </div>
+              <div class="book__title">
+                <a title="Vulturul, Volumul al III-lea" itemprop="url" href="https://test.anticariat.net/p/217044/Vulturul-Volumul-III-lea-Radu-Theodoru">
+                  <span itemprop="name">Vulturul, Volumul al III-lea</span>
+                </a>
+              </div>
+              <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b>19,00</b></span>
+                <span itemprop="priceCurrency" content="RON">lei</span>
+              </div>
+          </div>
+          <div class="book" itemprop="itemListElement" itemscope itemtype="http://schema.org/Book" itemid="https://test.anticariat.net/p/217791/Stramosii-Evocare-Editia-Radu-Theodoru">
+            <span itemprop="position" content="0">
+              <div>
+                <a title="Stramosii - Evocare, Editia a II-a" href="https://test.anticariat.net/p/217791/Stramosii-Evocare-Editia-Radu-Theodoru">
+                  <img class="book__cover" itemprop="image" src="https://www.anticariat.net/coperta/stramosii-evocare-editia-217791.jpg">
+                </a>
+              </div>
+              <div class="book__title">
+                <a title="Stramosii - Evocare, Editia a II-a" itemprop="url" href="https://test.anticariat.net/p/217791/Stramosii-Evocare-Editia-Radu-Theodoru">
+                  <span itemprop="name">Stramosii - Evocare, Editia a II-a</span>
+                </a>
+              </div>
+              <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b><span
+                      class="book__price--crossed">12,90</span> <span class="book__price--promo">6,50</span></b></span>
+                <span itemprop="priceCurrency" content="RON">lei</span>
+              </div>
+          </div>
+          <div class="book" itemprop="itemListElement" itemscope itemtype="http://schema.org/Book" itemid="https://test.anticariat.net/p/218978/Stramosii-Volumul-Hronic-vitejie-Radu-Theodoru">
+            <span itemprop="position" content="0">
+              <div>
+                <a title="Stramosii, Volumul I - Hronic de vitejie" href="https://test.anticariat.net/p/218978/Stramosii-Volumul-Hronic-vitejie-Radu-Theodoru">
+                  <img class="book__cover" itemprop="image" src="https://www.anticariat.net/coperta/stramosii-volumul-hronic-218978.jpg">
+                </a>
+              </div>
+              <div class="book__title">
+                <a title="Stramosii, Volumul I - Hronic de vitejie" itemprop="url" href="https://test.anticariat.net/p/218978/Stramosii-Volumul-Hronic-vitejie-Radu-Theodoru">
+                  <span itemprop="name">Stramosii, Volumul I - Hronic de vitejie</span>
+                </a>
+              </div>
+              <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b><span
+                      class="book__price--crossed">25,00</span> <span class="book__price--promo">17,50</span></b></span>
+                <span itemprop="priceCurrency" content="RON">lei</span>
+              </div>
+          </div>
+          <div class="book" itemprop="itemListElement" itemscope itemtype="http://schema.org/Book" itemid="https://test.anticariat.net/p/230471/Misiune-sacrificiu-Ilustratii-Sandu-Florea-Radu-Theodoru">
+            <span itemprop="position" content="0">
+              <div>
+                <a title="Misiune de sacrificiu (Ilustratii de Sandu Florea)" href="https://test.anticariat.net/p/230471/Misiune-sacrificiu-Ilustratii-Sandu-Florea-Radu-Theodoru">
+                  <img class="book__cover" itemprop="image" src="https://www.anticariat.net/coperta/misiune-sacrificiu-ilustratii-230471.jpg">
+                </a>
+              </div>
+              <div class="book__title">
+                <a title="Misiune de sacrificiu (Ilustratii de Sandu Florea)" itemprop="url" href="https://test.anticariat.net/p/230471/Misiune-sacrificiu-Ilustratii-Sandu-Florea-Radu-Theodoru">
+                  <span itemprop="name">Misiune de sacrificiu (Ilustratii de Sandu Florea)</span>
+                </a>
+              </div>
+              <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b>19,00</b></span>
+                <span itemprop="priceCurrency" content="RON">lei</span>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__frame">
+        <div class="gallery__frame--header">
+          <div class="gallery__frame--title">
+            <h1>Alte carti din categoria <b><a title="Roman istoric" href="/c/156/roman-istoric">ROMAN ISTORIC</a></b>:</h1>
+          </div>
+        </div>
+        <div class="gallery__frame--items gallery__frame--slideshow">
+          <div class="book" itemprop="itemListElement" itemscope itemtype="http://schema.org/Book" itemid="https://test.anticariat.net/p/250762/Nimeni-naste-soldat-Volumul-lea-Konstantin-Simonov-Eugen-Barbu">
+            <span itemprop="position" content="0">
+              <div>
+                <a title="Nimeni nu se naste soldat, Volumul al II-lea" href="https://test.anticariat.net/p/250762/Nimeni-naste-soldat-Volumul-lea-Konstantin-Simonov-Eugen-Barbu">
+                  <img class="book__cover" itemprop="image" src="https://www.anticariat.net/coperta/nimeni-naste-soldat-250762.jpg">
+                </a>
+              </div>
+              <div class="book__title">
+                <a title="Nimeni nu se naste soldat, Volumul al II-lea" itemprop="url" href="https://test.anticariat.net/p/250762/Nimeni-naste-soldat-Volumul-lea-Konstantin-Simonov-Eugen-Barbu">
+                  <span itemprop="name">Nimeni nu se naste soldat, Volumul al II-lea</span>
+                </a>
+              </div>
+              <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b>15,00</b></span>
+                <span itemprop="priceCurrency" content="RON">lei</span>
+              </div>
+          </div>
+          <div class="book" itemprop="itemListElement" itemscope itemtype="http://schema.org/Book" itemid="https://test.anticariat.net/p/250707/Razin-Stepan-Alexei-Ceapighin">
+            <span itemprop="position" content="0">
+              <div>
+                <a title="Razin Stepan" href="https://test.anticariat.net/p/250707/Razin-Stepan-Alexei-Ceapighin">
+                  <img class="book__cover" itemprop="image" src="https://www.anticariat.net/coperta/razin-stepan-alexei-250707.jpg">
+                </a>
+              </div>
+              <div class="book__title">
+                <a title="Razin Stepan" itemprop="url" href="https://test.anticariat.net/p/250707/Razin-Stepan-Alexei-Ceapighin">
+                  <span itemprop="name">Razin Stepan</span>
+                </a>
+              </div>
+              <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b>25,00</b></span>
+                <span itemprop="priceCurrency" content="RON">lei</span>
+              </div>
+          </div>
+          <div class="book" itemprop="itemListElement" itemscope itemtype="http://schema.org/Book" itemid="https://test.anticariat.net/p/250703/Intr-gara-din-apropierea-frontului-Nikolai-Toman">
+            <span itemprop="position" content="0">
+              <div>
+                <a title="Intr\'o gara din apropierea frontului" href="https://test.anticariat.net/p/250703/Intr-gara-din-apropierea-frontului-Nikolai-Toman">
+                  <img class="book__cover" itemprop="image" src="https://www.anticariat.net/coperta/intr-gara-din-250703.jpg">
+                </a>
+              </div>
+              <div class="book__title">
+                <a title="Intr\'o gara din apropierea frontului" itemprop="url" href="https://test.anticariat.net/p/250703/Intr-gara-din-apropierea-frontului-Nikolai-Toman">
+                  <span itemprop="name">Intr'o gara din apropierea frontului</span>
+                </a>
+              </div>
+              <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b>9,90</b></span>
+                <span itemprop="priceCurrency" content="RON">lei</span>
+              </div>
+          </div>
+          <div class="book" itemprop="itemListElement" itemscope itemtype="http://schema.org/Book" itemid="https://test.anticariat.net/p/250482/Magellan-Stefan-Zweig">
+            <span itemprop="position" content="0">
+              <div>
+                <a title="Magellan" href="https://test.anticariat.net/p/250482/Magellan-Stefan-Zweig">
+                  <img class="book__cover" itemprop="image" src="https://www.anticariat.net/coperta/magellan-stefan-zweig-250482.jpg">
+                </a>
+              </div>
+              <div class="book__title">
+                <a title="Magellan" itemprop="url" href="https://test.anticariat.net/p/250482/Magellan-Stefan-Zweig">
+                  <span itemprop="name">Magellan</span>
+                </a>
+              </div>
+              <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b>12,90</b></span>
+                <span itemprop="priceCurrency" content="RON">lei</span>
+              </div>
+          </div>
+          <div class="book" itemprop="itemListElement" itemscope itemtype="http://schema.org/Book" itemid="https://test.anticariat.net/p/250473/Regina-Margot-Volumul-Alexandre-Dumas-Mircea-Alexandrescu">
+            <span itemprop="position" content="0">
+              <div>
+                <a title="Regina Margot, Volumul I" href="https://test.anticariat.net/p/250473/Regina-Margot-Volumul-Alexandre-Dumas-Mircea-Alexandrescu">
+                  <img class="book__cover" itemprop="image" src="https://www.anticariat.net/coperta/regina-margot-volumul-250473.jpg">
+                </a>
+              </div>
+              <div class="book__title">
+                <a title="Regina Margot, Volumul I" itemprop="url" href="https://test.anticariat.net/p/250473/Regina-Margot-Volumul-Alexandre-Dumas-Mircea-Alexandrescu">
+                  <span itemprop="name">Regina Margot, Volumul I</span>
+                </a>
+              </div>
+              <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b>9,90</b></span>
+                <span itemprop="priceCurrency" content="RON">lei</span>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__frame">
+        <div class="gallery__frame--header">
+          <div class="gallery__frame--title">
+            <h1>Alte carti din categoria <b><a title="Beletristica si critica" href="/c/3/beletristica-critica">BELETRISTICA
+                  SI CRITICA</a></b>:</h1>
+          </div>
+        </div>
+        <div class="gallery__frame--items gallery__frame--slideshow">
+          <div class="book" itemprop="itemListElement" itemscope itemtype="http://schema.org/Book" itemid="https://test.anticariat.net/p/253089/Eminescu-Proza-literara-Editie-1975-Mihai-Eminescu">
+            <span itemprop="position" content="0">
+              <div>
+                <a title="Eminescu - Proza literara (Editie 1975)" href="https://test.anticariat.net/p/253089/Eminescu-Proza-literara-Editie-1975-Mihai-Eminescu">
+                  <img class="book__cover" itemprop="image" src="https://www.anticariat.net/coperta/eminescu-proza-literara-253089.jpg">
+                </a>
+              </div>
+              <div class="book__title">
+                <a title="Eminescu - Proza literara (Editie 1975)" itemprop="url" href="https://test.anticariat.net/p/253089/Eminescu-Proza-literara-Editie-1975-Mihai-Eminescu">
+                  <span itemprop="name">Eminescu - Proza literara (Editie 1975)</span>
+                </a>
+              </div>
+              <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b>9,90</b></span>
+                <span itemprop="priceCurrency" content="RON">lei</span>
+              </div>
+          </div>
+          <div class="book" itemprop="itemListElement" itemscope itemtype="http://schema.org/Book" itemid="https://test.anticariat.net/p/253088/Magdalena-miezul-noptii-Theodor-Constantin">
+            <span itemprop="position" content="0">
+              <div>
+                <a title="Magdalena de la miezul noptii" href="https://test.anticariat.net/p/253088/Magdalena-miezul-noptii-Theodor-Constantin">
+                  <img class="book__cover" itemprop="image" src="https://www.anticariat.net/coperta/magdalena-miezul-noptii-253088.jpg">
+                </a>
+              </div>
+              <div class="book__title">
+                <a title="Magdalena de la miezul noptii" itemprop="url" href="https://test.anticariat.net/p/253088/Magdalena-miezul-noptii-Theodor-Constantin">
+                  <span itemprop="name">Magdalena de la miezul noptii</span>
+                </a>
+              </div>
+              <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b>9,90</b></span>
+                <span itemprop="priceCurrency" content="RON">lei</span>
+              </div>
+          </div>
+          <div class="book" itemprop="itemListElement" itemscope itemtype="http://schema.org/Book" itemid="https://test.anticariat.net/p/253087/Comoara-din-Valea-Cerbului-Kislov">
+            <span itemprop="position" content="0">
+              <div>
+                <a title="Comoara din Valea Cerbului" href="https://test.anticariat.net/p/253087/Comoara-din-Valea-Cerbului-Kislov">
+                  <img class="book__cover" itemprop="image" src="https://www.anticariat.net/coperta/comoara-din-valea-253087.jpg">
+                </a>
+              </div>
+              <div class="book__title">
+                <a title="Comoara din Valea Cerbului" itemprop="url" href="https://test.anticariat.net/p/253087/Comoara-din-Valea-Cerbului-Kislov">
+                  <span itemprop="name">Comoara din Valea Cerbului</span>
+                </a>
+              </div>
+              <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b>9,90</b></span>
+                <span itemprop="priceCurrency" content="RON">lei</span>
+              </div>
+          </div>
+          <div class="book" itemprop="itemListElement" itemscope itemtype="http://schema.org/Book" itemid="https://test.anticariat.net/p/253086/Prin-Europa-Iosif-Constantin-Dragan">
+            <span itemprop="position" content="0">
+              <div>
+                <a title="Prin Europa, II" href="https://test.anticariat.net/p/253086/Prin-Europa-Iosif-Constantin-Dragan">
+                  <img class="book__cover" itemprop="image" src="https://www.anticariat.net/coperta/prin-europa-iosif-253086.jpg">
+                </a>
+              </div>
+              <div class="book__title">
+                <a title="Prin Europa, II" itemprop="url" href="https://test.anticariat.net/p/253086/Prin-Europa-Iosif-Constantin-Dragan">
+                  <span itemprop="name">Prin Europa, II</span>
+                </a>
+              </div>
+              <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b>15,00</b></span>
+                <span itemprop="priceCurrency" content="RON">lei</span>
+              </div>
+          </div>
+          <div class="book" itemprop="itemListElement" itemscope itemtype="http://schema.org/Book" itemid="https://test.anticariat.net/p/253085/Acolo-unde-stapina-primavara-Joe-Alex">
+            <span itemprop="position" content="0">
+              <div>
+                <a title="Acolo unde e stapina primavara" href="https://test.anticariat.net/p/253085/Acolo-unde-stapina-primavara-Joe-Alex">
+                  <img class="book__cover" itemprop="image" src="https://www.anticariat.net/coperta/acolo-unde-stapina-253085.jpg">
+                </a>
+              </div>
+              <div class="book__title">
+                <a title="Acolo unde e stapina primavara" itemprop="url" href="https://test.anticariat.net/p/253085/Acolo-unde-stapina-primavara-Joe-Alex">
+                  <span itemprop="name">Acolo unde e stapina primavara</span>
+                </a>
+              </div>
+              <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b>9,90</b></span>
+                <span itemprop="priceCurrency" content="RON">lei</span>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- The naming of class left-pane is a legacy - it's all about width proportions, the markup takes care of positioning-->
+    <div class="left-pane" id="left-pane">
+      <!-- Close left-side menu button -->
+      <a href="#" class="side-menu__close" onclick="slideMenu.close()">&CircleTimes;</a>
+      <!-- END - Close left-side menu button -->
+      <div class="side-menu">
+        <div class="side-menu__title">RECOMAND&#258;RI</div>
+        <div class="side-menu__recommended">
+          <div class="side-menu__recommended--book">
+            <a href="https://test.anticariat.net/p/23561/Portretul-unei-doamne-Henry-James" title="Portretul unei doamne"><img
+                class="book__cover" alt="Portretul unei doamne" src="https://www.anticariat.net/coperta/portretul-unei-doamne-23561.jpg">
+              <div class="book__title">Portretul unei doamne</div>
+            </a>
+          </div>
+          <div class="side-menu__recommended--book">
+            <a href="https://test.anticariat.net/p/48059/Caderea-Constantinopolelui-Volumul-lea-Vintila-Corbul" title="Caderea Constantinopolelui, Volumul al II-lea"><img
+                class="book__cover" alt="Caderea Constantinopolelui, Volumul al II-lea" src="https://www.anticariat.net/coperta/caderea-constantinopolelui-volumul-48059.jpg">
+              <div class="book__title">Caderea Constantinopolelui, Volumul al II-lea</div>
+            </a>
+          </div>
+          <div class="side-menu__recommended--book">
+            <a href="https://test.anticariat.net/p/126974/Utilaje-destinate-procesarii-produselor-din-carne-lapte-unitati-productie-mici"
+              title="Utilaje destinate procesarii produselor din carne si lapte in unitati de productie mici si mijlocii"><img
+                class="book__cover" alt="Utilaje destinate procesarii produselor din carne si lapte in unitati de productie mici si mijlocii"
+                src="https://www.anticariat.net/coperta/utilaje-destinate-procesarii-126974.jpg">
+              <div class="book__title">Utilaje destinate procesarii produselor din carne si lapte in unitati de
+                productie mici si mijlocii</div>
+            </a>
+          </div>
+          <div class="side-menu__recommended--book">
+            <a href="https://test.anticariat.net/p/13171/Papusa-Volumele-Radu-Tudoran-Boleslaw-Prus-Dan-Telemac" title="Papusa, Volumele I si II"><img
+                class="book__cover" alt="Papusa, Volumele I si II" src="https://www.anticariat.net/coperta/papusa-volumele-radu-13171.jpg">
+              <div class="book__title">Papusa, Volumele I si II</div>
+            </a>
+          </div>
+          <div class="side-menu__recommended--book">
+            <a href="https://test.anticariat.net/p/11917/Doamna-Monsoreau-Volumele-Alexandre-Dumas-Ion-Caroian" title="Doamna de Monsoreau, Volumele I si II"><img
+                class="book__cover" alt="Doamna de Monsoreau, Volumele I si II" src="https://www.anticariat.net/coperta/doamna-monsoreau-volumele-11917.jpg">
+              <div class="book__title">Doamna de Monsoreau, Volumele I si II</div>
+            </a>
+          </div>
+          <div class="side-menu__recommended--book">
+            <a href="https://test.anticariat.net/p/15561/pasa-damelor-Peter-Cheyney" title="Ce le pasa damelor!"><img
+                class="book__cover" alt="Ce le pasa damelor!" src="https://www.anticariat.net/coperta/pasa-damelor-peter-15561.jpg">
+              <div class="book__title">Ce le pasa damelor!</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END of main container division -->
+
+  <div class="container">
+    <div class="footer">
+      <div class="footer__main">
+        <a title="Categorii" href="https://test.anticariat.net/categorii">Categorii</a>
+        <a href="https://test.anticariat.net/informatii.php">Despre noi</a>
+        <a href="https://test.anticariat.net/contact" title="Informatii despre noi">Contact</a>
+        <a href="https://test.anticariat.net/informatii-transport-plata.php">Livrare si plata</a>
+      </div>
+      <div class="footer__secondary">
+        <a href="https://test.anticariat.net/termeni.php" title="Termeni si conditii">Termeni si conditii</a>
+        <a href="http://www.anpc.gov.ro/" rel="nofollow" target="_blank">ANPC</a>
+      </div>
+      <span class="footer__copyright">&copy; 2018 <a title="ANTICARIAT NET S.R.L." href="https://test.anticariat.net"><b>ANTICARIAT
+            NET S.R.L.</b></a></span>
+    </div>
+  </div>
+  <script src="index.js"></script>
+
+</body>
+
+</html>

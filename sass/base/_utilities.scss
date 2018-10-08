@@ -22,3 +22,19 @@
 .u-no-float {
   float: none;
 }
+
+.u-horizontal-middle {
+  width: 61% !important;
+
+  @include respond(tab-landscape) {
+    width: 61% !important;
+  }
+
+  @include respond(tab-portrait) {
+    width: 75% !important;
+  }
+
+  @include respond(phone) {
+    width: 100% !important;
+  }
+}

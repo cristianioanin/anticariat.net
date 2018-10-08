@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="language" content="RO">
+  <title>ANTICARIAT.NET - Cartile vechi pe care le cauti, la preturi minime!</title>
+  <link href="https://fonts.googleapis.com/css?family=Lobster|PT+Sans:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta name="description" content="ANTICARIAT.NET este anticariatul unde gasiti cele mai multe carti vechi din toate domeniile. Zilnic stocul nostru de carte este actualizat.">
+</head>
+
+<body>
+  <div class="container">
+    <div class="navigation">
+      <div class="navigation__top">
+        <!-- Side-menu toggle on phone -->
+        <span class="side-menu__open">
+          <a href="#" onclick="slideMenu.open()">
+            <svg width="35" height="35">
+              <path d="M10,5 35,5" stroke="#333" stroke-width=".3rem" />
+              <path d="M12,12 33,12" stroke="#333" stroke-width=".3rem" />
+              <path d="M10,19 35,19" stroke="#333" stroke-width=".3rem" />
+            </svg>
+          </a>
+        </span>
+        <!-- END - Side-menu toggle on phone -->
+        <a class="navigation__link" title="Clienti - administrare" href="https://www.anticariat.net/clienti_admin.php">Cont
+          client</a>
+        <a class="navigation__link" title="Formular de contact, numere de telefon, adresa noastra" href="./contact.html">Contact</a>
+        <a class="navigation__link" title="Informatii despre noi" href="./info.html">Info</a>
+      </div>
+      <div class="navigation__main">
+        <div class="row">
+          <div class="col-1-of-4" id="main-logo">
+            <a title="ANTICARIAT.NET" href="#"><img class="navigation__main--logo" src="images/logo_anticariat.svg" alt="ANTICARIAT.NET"></a>
+          </div>
+          <div class="col-1-of-4" id="shopping-cart-preview">
+            <div class="shopping-cart__preview">
+              <div class="shopping-cart__preview--title">
+                <span>Coș de cumpărături</span>
+              </div>
+              <div class="shopping-cart__preview--icon">
+                <a title="COS CUMPARATURI" href="https://www.anticariat.net/cos.php"><i class="material-icons md-48 white">
+                    shopping_cart
+                  </i></a>
+              </div>
+              <div class="shopping-cart__preview--content">
+                <div class="shopping-cart__preview--content--amount"><span id="cart_amount">30</span> lei</div>
+                <div class="shopping-cart__preview--content--articles"><span id="cart_articles">2</span> produse </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-2-of-4" id="main-form-search">
+            <form class="navigation__main--search" action="https://www.anticariat.net/cautare-rezultate.php" method="GET">
+              <input type="text" name="t" placeholder="Caută aici după cuvinte cheie: titlu, autor, editură...">
+              <input type="submit" value="Caută">
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="header__promo">
+      <div class="navigation__motto">
+        <p class="navigation__motto--paragraph">
+          <span>Cărţile vechi pe care le cauţi, la preţuri minime!</span>
+        </p>
+      </div>
+      <div class="header__promo--item">
+        <a href='https://test.anticariat.net/c/1986/carte-straina'>Carte de import</a>
+      </div>
+      <div class="header__promo--item">
+        <a href='https://test.anticariat.net/c/7/stiinta-tehnica'>Carte tehnică</a>
+      </div>
+      <div class="header__promo--item">
+        <a href='https://test.anticariat.net/c/54/medicina-sanatate'>Medicină</a>
+      </div>
+      <div class="header__promo--item">
+        <a href='https://test.anticariat.net/promotii'>PROMOTII</a>
+      </div>
+    </div>
+
+    <div class="left-pane" id="left-pane">
+      <!-- Close left-side menu button -->
+      <a href="#" class="side-menu__close" onclick="slideMenu.close()">&CircleTimes;</a>
+      <!-- END - Close left-side menu button -->
+      <div class="side-menu">
+        <div class="side-menu__title">INFORMA&#354;II</div>
+
+        <div class="side-menu__items" id="side-menu__categories"><a class="side-menu__item" title="" href="/informatii-contact.php">Contacta&#355;i-ne</a><a
+            class="side-menu__item" title="" href="/informatii-transport-plata.php">Despre livrare &#351;i
+            plat&#259;</a><a class="side-menu__item" title="" href="/informatii-comanda.php">Cum se comand&#259;</a><a
+            class="side-menu__item" title="" href="/informatii-despre-noi.php">Despre noi</a></div>
+      </div>
+      <div class="side-menu">
+        <div class="side-menu__title">PARTENER</div>
+        <div class="side-menu__items side-menu__partner">
+          <a target=_Blank href="http://www.librarie.net" rel="nofollow"><img class="side-menu__logo-partner" src="https://test.anticariat.net/img/logo/logo_librarie.svg"></a>
+        </div>
+      </div>
+      <div class="side-menu">
+        <div class="side-menu__title">NEWSLETTER</div>
+        <div class="side-menu__items">
+          <form class="side-menu__subscription" action="https://test.anticariat.net/newsletter.php" method="POST">
+            <label for="subscription">Adresa de e-mail:</label>
+            <input name="email" type="email" id="subscription" placeholder="email@domain.com">
+            <input type=submit value="Ma abonez">
+          </form>
+        </div>
+      </div>
+      <div style="padding:10px;">
+        <div class="fb-like" data-href="http://www.anticariat.net/" data-width="150" data-layout="button" data-action="like"
+          data-show-faces="true" data-share="true"></div>
+      </div>
+      <div class="side-menu">
+        <div class="side-menu__title">RECOMAND&#258;RI</div>
+        <div class="side-menu__recommended">
+          <div class="side-menu__recommended--book">
+            <a href="https://test.anticariat.net/p/97694/Viata-lui-Henry-Brulard-Amintiri-egotiste-Stendhal-Modest-Morariu"
+              title="Viata lui Henry Brulard. Amintiri egotiste"><img class="book__cover" alt="Viata lui Henry Brulard. Amintiri egotiste"
+                src="https://www.anticariat.net/coperta/viata-lui-henry-97694.jpg">
+              <div class="book__title">Viata lui Henry Brulard. Amintiri egotiste</div>
+            </a>
+          </div>
+          <div class="side-menu__recommended--book">
+            <a href="https://test.anticariat.net/p/159179/Scarabeul-sacru-Legende-balade-sonete-poeme-Tudor-George"
+              title="Scarabeul sacru - Legende, balade, sonete, poeme"><img class="book__cover" alt="Scarabeul sacru - Legende, balade, sonete, poeme"
+                src="https://www.anticariat.net/coperta/scarabeul-sacru-legende-159179.jpg">
+              <div class="book__title">Scarabeul sacru - Legende, balade, sonete, poeme</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="right-pane  u-horizontal-middle">
+      <div class="gallery__frame">
+        <div class="gallery__frame--header">
+          <h2>Administrare cont client</h2>
+        </div>
+        <div class="info">
+          <div class="info__headline">
+            <p>Daca aveti cont client si ati primit email-ul cu parola, puteti intra in pagina de administrare a
+              contului de client folosind formularul de mai jos:
+
+              <p>
+          </div>
+          <div class="form" id="login-form">
+            <form action="clienti_admin.php" method="post">
+              <input type="hidden" name="action" value="login">
+              <div class="form__group">
+                <input type="email" name="email" class="form__input" placeholder="Email" id="email">
+                <label for="email" class="form__label">Email</label>
+              </div>
+              <div class="form__group">
+                <input type="password" name="password" id="password" class="form__input" placeholder="Parola">
+                <label for="password" class="form__label">Parola</label>
+              </div>
+              <div class="form__group">
+                <button class="btn btn-text btn-submit" type=submit> Intră</button>
+              </div>
+            </form>
+          </div>
+          <div class="form__more-opt u-margin-top-big">
+            <ul class="form__more-opt--list">
+              <li class="list-item"><a class="btn-text" title="Inregistrare clienti" href="clienti_reg.php">Nu
+                  sunteți
+                  înregistrat?</a></li>
+              <li class="list-item"><a class="btn-text" href="parola.php">Ați uitat parola?</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="left-pane" id="rightmost-pane">
+      <div class="side-menu">
+        <div class="side-menu__title">RECOMAND&#258;RI</div>
+        <div class="side-menu__recommended">
+          <div class="side-menu__recommended--book">
+            <a href="https://test.anticariat.net/p/8563/Adam-Eva-Centenar-Liviu-Rebreanu-1885-1985-Liviu-Rebreanu"
+              title="Adam si Eva (Centenar Liviu Rebreanu 1885-1985)"><img class="book__cover" alt="Adam si Eva (Centenar Liviu Rebreanu 1885-1985)"
+                src="https://www.anticariat.net/coperta/adam-eva-centenar-8563.jpg">
+              <div class="book__title">Adam si Eva (Centenar Liviu Rebreanu 1885-1985)</div>
+            </a>
+          </div>
+          <div class="side-menu__recommended--book">
+            <a href="https://test.anticariat.net/p/69023/Gherla-Paul-Goma" title="Gherla"><img class="book__cover" alt="Gherla"
+                src="https://www.anticariat.net/coperta/gherla-paul-goma-69023.jpg">
+              <div class="book__title">Gherla</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END of main container division -->
+
+  <div class="container">
+    <div class="footer">
+      <div class="footer__main">
+        <a title="Categorii" href="https://test.anticariat.net/categorii">Categorii</a>
+        <a href="https://test.anticariat.net/informatii.php">Despre noi</a>
+        <a href="https://test.anticariat.net/contact" title="Informatii despre noi">Contact</a>
+        <a href="https://test.anticariat.net/informatii-transport-plata.php">Livrare si plata</a>
+      </div>
+      <div class="footer__secondary">
+        <a href="https://test.anticariat.net/termeni.php" title="Termeni si conditii">Termeni si conditii</a>
+        <a href="http://www.anpc.gov.ro/" rel="nofollow" target="_blank">ANPC</a>
+      </div>
+      <span class="footer__copyright">&copy; 2018 <a title="ANTICARIAT NET S.R.L." href="https://test.anticariat.net"><b>ANTICARIAT
+            NET S.R.L.</b></a></span>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

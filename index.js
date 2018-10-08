@@ -5,7 +5,7 @@ class SlideMenu {
   }
 
   open() {
-    this.leftSideMenu.style.width = '26rem';
+    this.leftSideMenu.style.width = '28rem';
     setTimeout(() => {
       this.closeButton.style.position = 'fixed';
     }, 400);
