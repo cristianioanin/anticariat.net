@@ -37,7 +37,7 @@
       <div class="navigation__main">
         <div class="row">
           <div class="col-1-of-4" id="main-logo">
-            <a title="ANTICARIAT.NET" href="https://test.anticariat.net"><img class="navigation__main--logo" src="https://test.anticariat.net/img/logo/logo_anticariat.svg"
+            <a title="ANTICARIAT.NET" href="https://test.anticariat.net"><img class="navigation__main--logo" src="./images/logo_anticariat.svg"
                 alt="ANTICARIAT.NET"></a>
           </div>
           <div class="col-1-of-4" id="shopping-cart-preview">
@@ -88,7 +88,7 @@
       </div>
     </div>
 
-    <div class="right-pane" itemscope itemtype="http://schema.org/Book" itemid="https://test.anticariat.net/p/253103/Vulturul-Volumul-lea-Radu-Theodoru">
+    <div class="right-pane" id="product-main-container" itemscope itemtype="http://schema.org/Book" itemid="https://test.anticariat.net/p/253103/Vulturul-Volumul-lea-Radu-Theodoru">
       <div class="info">
         <div class="info__headline">
           <span itemprop="url" content="https://test.anticariat.net/p/253103/Vulturul-Volumul-lea-Radu-Theodoru"></span>
@@ -118,7 +118,7 @@
       <!-- Main division for PRODUCT -->
       <div class="product-pane">
         <div class="row">
-          <div class="col-1-of-3">
+          <div class="col-1-of-3" id="product-cover">
             <div class="product-pane__cover">
               <a target="_blank" href="https://www.anticariat.net/coperta/vulturul-volumul-lea-253103.jpg" rel="thumbnail"
                 title="Vulturul, Volumul al II-lea"><img class="product-pane__image" alt="Vulturul, Volumul al II-lea"
@@ -126,7 +126,7 @@
             </div>
           </div>
 
-          <div class="col-2-of-3">
+          <div class="col-2-of-3" id="product-specifications">
             <div class="product-pane__specifications">
               <h1><span itemprop="name">Vulturul, Volumul al II-lea</span></h1>
               <p>
@@ -169,7 +169,7 @@
                 </p>
                 <div onclick="document.location='/produs.php?action_cos=cos_action_adauga&idc=253103&id=253103'" class="product-pane__cta--buy"><a
                     title="ADAUGA IN COS" href="/produs.php?action_cos=cos_action_adauga&idc=253103&id=253103"><span>Comandă
-                      <i class="material-icons md-48 white">
+                      <i class="material-icons md-32 white">
                         add_shopping_cart
                       </i></span></a></div>
               </div>
@@ -458,7 +458,7 @@
     </div>
 
     <!-- The naming of class left-pane is a legacy - it's all about width proportions, the markup takes care of positioning-->
-    <div class="left-pane" id="left-pane">
+    <div class="left-pane recommend-right" id="left-pane">
       <!-- Close left-side menu button -->
       <a href="#" class="side-menu__close" onclick="slideMenu.close()">&CircleTimes;</a>
       <!-- END - Close left-side menu button -->
