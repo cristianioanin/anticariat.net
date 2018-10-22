@@ -631,7 +631,7 @@ body {
     .header__promo--item a:link,
     .header__promo--item a:visited {
       display: inline-block;
-      background-color: #777;
+      background-color: #333;
       padding: 0 .5rem;
       border-radius: 1rem 1rem 0 0;
       text-decoration: none;
@@ -710,6 +710,7 @@ body {
     text-align: right;
     padding: 0 .5rem; }
     .side-menu__more--link:link, .side-menu__more--link:visited {
+      display: inline-block;
       padding: .5rem;
       text-decoration: none;
       font-size: 1.6rem;
@@ -787,7 +788,8 @@ body {
       width: 100%; } }
 
 .gallery {
-  width: 100%; }
+  width: 100%;
+  background-color: #f7f7f7; }
   .gallery__frame {
     width: 100%;
     font-size: 1.6rem;
@@ -801,6 +803,7 @@ body {
       width: 100%;
       height: 5.6rem;
       margin-top: 2rem;
+      background-color: #fff;
       color: #C10202;
       box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1); }
       .gallery__frame--header a {
@@ -900,7 +903,8 @@ body {
   font-size: 1.5rem; }
   .product-pane__cover {
     padding: 2rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); }
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    background-color: #fff; }
   .product-pane__image {
     display: block;
     width: 100%;
@@ -910,6 +914,7 @@ body {
       .product-pane__image {
         width: 60%; } }
   .product-pane__specifications {
+    background-color: #fff;
     min-height: 25rem;
     padding: 2rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); }
@@ -919,6 +924,7 @@ body {
     .product-pane__specifications a {
       font-size: 1.5rem !important; }
   .product-pane__cta {
+    background-color: #fff;
     min-height: 20rem;
     padding: 2rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
@@ -954,9 +960,11 @@ body {
   .recommend-right {
     display: none; } }
 
-@media only screen and (max-width: 48em) {
-  #product-main-container {
-    width: 100% !important; } }
+#product-main-container {
+  background-color: #f7f7f7; }
+  @media only screen and (max-width: 48em) {
+    #product-main-container {
+      width: 100% !important; } }
 
 @media only screen and (max-width: 48em) {
   #product-cover {

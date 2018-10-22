@@ -19,6 +19,6 @@ class SlideMenu {
 
 const initializeSlideMenu = function () {
   window.slideMenu = new SlideMenu();
-}
+};
 
 document.addEventListener('DOMContentLoaded', initializeSlideMenu);

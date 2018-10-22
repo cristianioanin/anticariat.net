@@ -6,7 +6,7 @@
   &__cover {
     padding: 2rem;
     box-shadow: 0 .5rem 1rem rgba($color-black, .1);
-   
+    background-color: $color-white;
   }
 
   &__image {
@@ -21,6 +21,7 @@
   }
 
   &__specifications {
+    background-color: $color-white;
     min-height: 25rem;
     padding: 2rem;
     box-shadow: 0 .5rem 1rem rgba($color-black, .1);
@@ -36,6 +37,7 @@
   }
 
   &__cta {
+    background-color: $color-white;
     min-height: 20rem;
     padding: 2rem;
     box-shadow: 0 .5rem 1rem rgba($color-black, .1);
@@ -87,6 +89,7 @@
 }
 
 #product-main-container {
+  background-color: $color-grey-light-1;
   @include respond(tab-portrait) {
     width: 100% !important;
   }
