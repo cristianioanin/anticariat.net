@@ -49,9 +49,15 @@
     }
 
     &--search {
+      display: flex;
+      justify-content: center;
       padding: 3rem 0;
-      margin-right: -5rem;
       text-align: center;
+      align-items: center;
+
+      @include respond(phone) {
+        flex-direction: column;
+      }
 
       & input[type=text] {
         font-family: inherit;
@@ -68,7 +74,6 @@
 
         @include respond(phone) {
           width: 90%;
-          margin: 1rem auto;
         }
 
         &:focus {
@@ -94,8 +99,8 @@
         transition: all .3s;
 
         @include respond(phone) {
-          width: 85%;
-          margin: 1rem;
+          width: 75%;
+          margin: 1.5rem 0;
           padding: .5rem 1rem;
           font-weight: 700;
         }
@@ -145,6 +150,10 @@
   height: 12rem;  
   border-radius: 4px;
   box-shadow: 0 .5rem 1rem rgba($color-black, .1);
+
+  @include respond(phone) {
+    margin-right: 0;
+  }
 
 
   &--title {

@@ -4,6 +4,8 @@
   margin: 0 auto;
   text-align: left;
   color: $color-black;
+  background: $color-grey-light-2;
+  border-radius: .5rem;
 
   &__group {
     width: 60%;
@@ -26,9 +28,10 @@
     font-family: inherit;
     color: inherit;
     font-size: 1.5rem;
-    padding: 1.5rem 2rem;
+    padding: 1rem 2rem;
+    margin-top: 3rem;
     border-radius: 3px;
-    background-color: rgba($color-white, .5);
+    background-color: $color-white;
     border: none;
     border-bottom: 3px solid $color-grey-dark-2;
     box-shadow: 0 .5rem 1rem rgba($color-black, .1);
