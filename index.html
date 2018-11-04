@@ -48,11 +48,13 @@ La data de 03-11-2018, anticariatul nostru detine 44975 carti in stoc!">
       </div>
       <div class="navigation__main">
         <div class="row">
-          <div class="col-1-of-4" id="main-logo">
+          <!-- TOCHANGE: class="col-1-of-4" TO class="col-1-of-3" -->
+          <div class="col-1-of-3" id="main-logo">
             <a title="ANTICARIAT.NET" href="https://www.anticariat.net"><img class="navigation__main--logo" src="https://www.anticariat.net/img/logo/logo_anticariat.svg"
                 alt="ANTICARIAT.NET"></a>
           </div>
-          <div class="col-1-of-4" id="shopping-cart-preview">
+          <!-- TOCHANGE: class="col-1-of-4" TO class="col-2-of-3" -->
+          <div class="col-2-of-3" id="shopping-cart-preview">
             <div class="shopping-cart__preview">
               <div class="shopping-cart__preview--title">
                 <span>Cos de cumpărături</span>
@@ -68,7 +70,11 @@ La data de 03-11-2018, anticariatul nostru detine 44975 carti in stoc!">
               </div>
             </div>
           </div>
-          <div class="col-2-of-4" id="main-form-search">
+          <!-- CLOSE div tag for class .row - SEE line 50 -->
+        </div>
+        <!-- OPEN div tag for class .row - SEE line 83, where it closes -->
+        <div class="row">
+          <div id="main-form-search">
             <form class="navigation__main--search" action="https://www.anticariat.net/cautare-rezultate.php" method="GET">
               <input type="text" name="t" placeholder="Caută aici după cuvinte cheie: titlu, autor, editură...">
               <input type="submit" value="Caută">
@@ -105,25 +111,28 @@ La data de 03-11-2018, anticariatul nostru detine 44975 carti in stoc!">
       <div class="side-menu">
         <div class="side-menu__title">CATEGORII</div>
 
-        <div class="side-menu__items" id="side-menu__categories"><a class="side-menu__item" title="Arta si Fotografie" href="/c/78/arta-fotografie">Arta
+        <div class="side-menu__items" id="side-menu__categories"><a class="side-menu__item" title="Arta si Fotografie"
+            href="/c/78/arta-fotografie">Arta
             si Fotografie</a><a class="side-menu__item" title="Beletristica si critica" href="/c/3/beletristica-critica">Beletristica
             si critica</a><a class="side-menu__item" title="Bibliofilie / Carti rare" href="/c/1875/bibliofilie-carti-rare">Bibliofilie
             / Carti rare</a><a class="side-menu__item" title="Biografii - Memorialistica" href="/c/1717/biografii-memorialistica">Biografii
             - Memorialistica</a><a class="side-menu__item" title="Calculatoare / IT" href="/c/58/calculatoare-it">Calculatoare
-            / IT</a><a class="side-menu__item" title="Carte nefolosita" href="/c/1900/carte-nefolosita">Carte nefolosita</a><a
-            class="side-menu__item" title="Carte straina" href="/c/393/carte-straina">Carte straina</a><a class="side-menu__item"
-            title="Carti pentru copii" href="/c/66/carti-pentru-copii">Carti pentru copii</a><a class="side-menu__item" title="Dictionare si ghiduri"
-            href="/c/12/dictionare-ghiduri">Dictionare si ghiduri</a><a class="side-menu__item" title="Diverse" href="/c/70/diverse">Diverse</a><a
-            class="side-menu__item" title="Drept" href="/c/29/drept">Drept</a><a class="side-menu__item" title="Economie" href="/c/21/economie">Economie</a><a
-            class="side-menu__item" title="Filosofie" href="/c/32/filosofie">Filosofie</a><a class="side-menu__item" title="Invatamant - Educatie"
-            href="/c/8/invatamant-educatie">Invatamant - Educatie</a><a class="side-menu__item" title="Istorie" href="/c/89/istorie">Istorie</a><a
-            class="side-menu__item" title="Limbi Straine" href="/c/37/limbi-straine">Limbi Straine</a><a class="side-menu__item"
-            title="Medicina - Sanatate" href="/c/54/medicina-sanatate">Medicina - Sanatate</a><a class="side-menu__item" title="Politica"
-            href="/c/106/politica">Politica</a><a class="side-menu__item" title="Psihologie" href="/c/33/psihologie">Psihologie</a><a
-            class="side-menu__item" title="Religie" href="/c/35/religie">Religie</a><a class="side-menu__item" title="Reviste / Almanahuri"
-            href="/c/375/reviste-almanahuri">Reviste / Almanahuri</a><a class="side-menu__item" title="Science-Fiction & Fantasy"
-            href="/c/1704/science-fiction-&-fantasy">Science-Fiction & Fantasy</a><a class="side-menu__item" title="Sociologie"
-            href="/c/34/sociologie">Sociologie</a><a class="side-menu__item" title="Stiinta si Tehnica" href="/c/7/stiinta-tehnica">Stiinta
+            / IT</a><a class="side-menu__item" title="Carte nefolosita" href="/c/1900/carte-nefolosita">Carte
+            nefolosita</a><a class="side-menu__item" title="Carte straina" href="/c/393/carte-straina">Carte straina</a><a
+            class="side-menu__item" title="Carti pentru copii" href="/c/66/carti-pentru-copii">Carti pentru copii</a><a
+            class="side-menu__item" title="Dictionare si ghiduri" href="/c/12/dictionare-ghiduri">Dictionare si ghiduri</a><a
+            class="side-menu__item" title="Diverse" href="/c/70/diverse">Diverse</a><a class="side-menu__item" title="Drept"
+            href="/c/29/drept">Drept</a><a class="side-menu__item" title="Economie" href="/c/21/economie">Economie</a><a
+            class="side-menu__item" title="Filosofie" href="/c/32/filosofie">Filosofie</a><a class="side-menu__item"
+            title="Invatamant - Educatie" href="/c/8/invatamant-educatie">Invatamant - Educatie</a><a class="side-menu__item"
+            title="Istorie" href="/c/89/istorie">Istorie</a><a class="side-menu__item" title="Limbi Straine" href="/c/37/limbi-straine">Limbi
+            Straine</a><a class="side-menu__item" title="Medicina - Sanatate" href="/c/54/medicina-sanatate">Medicina -
+            Sanatate</a><a class="side-menu__item" title="Politica" href="/c/106/politica">Politica</a><a class="side-menu__item"
+            title="Psihologie" href="/c/33/psihologie">Psihologie</a><a class="side-menu__item" title="Religie" href="/c/35/religie">Religie</a><a
+            class="side-menu__item" title="Reviste / Almanahuri" href="/c/375/reviste-almanahuri">Reviste / Almanahuri</a><a
+            class="side-menu__item" title="Science-Fiction & Fantasy" href="/c/1704/science-fiction-&-fantasy">Science-Fiction
+            & Fantasy</a><a class="side-menu__item" title="Sociologie" href="/c/34/sociologie">Sociologie</a><a class="side-menu__item"
+            title="Stiinta si Tehnica" href="/c/7/stiinta-tehnica">Stiinta
             si Tehnica</a><a class="side-menu__item" title="Stiintele Naturii" href="/c/1377/stiintele-naturii">Stiintele
             Naturii
           </a></div>
@@ -158,8 +167,8 @@ La data de 03-11-2018, anticariatul nostru detine 44975 carti in stoc!">
         </div>
       </div>
       <div style="padding:10px;">
-        <div class="fb-like" data-href="http://www.anticariat.net/" data-width="150" data-layout="button" data-action="like" data-show-faces="true"
-          data-share="true"></div>
+        <div class="fb-like" data-href="http://www.anticariat.net/" data-width="150" data-layout="button" data-action="like"
+          data-show-faces="true" data-share="true"></div>
       </div>
       <div class="side-menu">
         <div class="side-menu__title">RECOMAND&#258;RI</div>
@@ -687,7 +696,8 @@ La data de 03-11-2018, anticariatul nostru detine 44975 carti in stoc!">
                   </a>
                 </div>
                 <div class="book__title">
-                  <a title="Nevestele vesele din Windsor. Cum va place - Comedii, Volumul al II-lea" itemprop="url" href="https://www.anticariat.net/p/20715/Nevestele-vesele-din-Windsor-Cum-place-Comedii-Volumul-lea-William">
+                  <a title="Nevestele vesele din Windsor. Cum va place - Comedii, Volumul al II-lea" itemprop="url"
+                    href="https://www.anticariat.net/p/20715/Nevestele-vesele-din-Windsor-Cum-place-Comedii-Volumul-lea-William">
                     <span itemprop="name">Nevestele vesele din Windsor. Cum va place - Comedii, Volumul al II-lea</span>
                   </a>
                 </div>
@@ -772,7 +782,8 @@ La data de 03-11-2018, anticariatul nostru detine 44975 carti in stoc!">
                   </a>
                 </div>
                 <div class="book__title">
-                  <a title="Transilvania - Inima a pamantului romanesc si leagan al poporului roman" itemprop="url" href="https://www.anticariat.net/p/59846/Transilvania-Inima-pamantului-romanesc-leagan-poporului-roman-Stefan-Pascu">
+                  <a title="Transilvania - Inima a pamantului romanesc si leagan al poporului roman" itemprop="url"
+                    href="https://www.anticariat.net/p/59846/Transilvania-Inima-pamantului-romanesc-leagan-poporului-roman-Stefan-Pascu">
                     <span itemprop="name">Transilvania - Inima a pamantului romanesc si leagan al poporului roman</span>
                   </a>
                 </div>
@@ -982,8 +993,10 @@ La data de 03-11-2018, anticariatul nostru detine 44975 carti in stoc!">
                   </a>
                 </div>
                 <div class="book__title">
-                  <a title="Examenul de Bacalaureat National 2013 - Limba si literatura romana. Modele de teste" itemprop="url" href="https://www.anticariat.net/p/250810/Examenul-Bacalaureat-National-2013-Limba-literatura-romana-Modele-teste-Adrian">
-                    <span itemprop="name">Examenul de Bacalaureat National 2013 - Limba si literatura romana. Modele de teste</span>
+                  <a title="Examenul de Bacalaureat National 2013 - Limba si literatura romana. Modele de teste"
+                    itemprop="url" href="https://www.anticariat.net/p/250810/Examenul-Bacalaureat-National-2013-Limba-literatura-romana-Modele-teste-Adrian">
+                    <span itemprop="name">Examenul de Bacalaureat National 2013 - Limba si literatura romana. Modele de
+                      teste</span>
                   </a>
                 </div>
                 <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b>15,00</b></span>
@@ -1014,8 +1027,10 @@ La data de 03-11-2018, anticariatul nostru detine 44975 carti in stoc!">
                   </a>
                 </div>
                 <div class="book__title">
-                  <a title="Limba si literatura romana. Examenul de bacalaureat 2010. Proba orala, proba scrisa" itemprop="url" href="https://www.anticariat.net/p/230453/Limba-literatura-romana-Examenul-bacalaureat-2010-Proba-orala-proba-scrisa">
-                    <span itemprop="name">Limba si literatura romana. Examenul de bacalaureat 2010. Proba orala, proba scrisa</span>
+                  <a title="Limba si literatura romana. Examenul de bacalaureat 2010. Proba orala, proba scrisa"
+                    itemprop="url" href="https://www.anticariat.net/p/230453/Limba-literatura-romana-Examenul-bacalaureat-2010-Proba-orala-proba-scrisa">
+                    <span itemprop="name">Limba si literatura romana. Examenul de bacalaureat 2010. Proba orala, proba
+                      scrisa</span>
                   </a>
                 </div>
                 <div class="book__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><span itemprop="price"><b>12,90</b></span>
@@ -1087,7 +1102,8 @@ La data de 03-11-2018, anticariatul nostru detine 44975 carti in stoc!">
                   </a>
                 </div>
                 <div class="book__title">
-                  <a title="Ginecorama - Actualitati in Obstetrica si Ginecologie, Vol. 5, No. 1, 1999" itemprop="url" href="https://www.anticariat.net/p/230285/Ginecorama-Actualitati-Obstetrica-Ginecologie-Vol-1999-Alex-Vidaeff">
+                  <a title="Ginecorama - Actualitati in Obstetrica si Ginecologie, Vol. 5, No. 1, 1999" itemprop="url"
+                    href="https://www.anticariat.net/p/230285/Ginecorama-Actualitati-Obstetrica-Ginecologie-Vol-1999-Alex-Vidaeff">
                     <span itemprop="name">Ginecorama - Actualitati in Obstetrica si Ginecologie, Vol. 5, No. 1, 1999</span>
                   </a>
                 </div>
@@ -1135,7 +1151,8 @@ La data de 03-11-2018, anticariatul nostru detine 44975 carti in stoc!">
                   </a>
                 </div>
                 <div class="book__title">
-                  <a title="Ginecorama - Actualitati in Obstetrica si Ginecologie, Vol. 1, No.1, 1994" itemprop="url" href="https://www.anticariat.net/p/230278/Ginecorama-Actualitati-Obstetrica-Ginecologie-Vol-1994-Alex-Vidaeff">
+                  <a title="Ginecorama - Actualitati in Obstetrica si Ginecologie, Vol. 1, No.1, 1994" itemprop="url"
+                    href="https://www.anticariat.net/p/230278/Ginecorama-Actualitati-Obstetrica-Ginecologie-Vol-1994-Alex-Vidaeff">
                     <span itemprop="name">Ginecorama - Actualitati in Obstetrica si Ginecologie, Vol. 1, No.1, 1994</span>
                   </a>
                 </div>
@@ -1219,14 +1236,16 @@ La data de 03-11-2018, anticariatul nostru detine 44975 carti in stoc!">
             <div class="book" itemprop="itemListElement" itemscope itemtype="http://schema.org/Book" itemid="https://www.anticariat.net/p/126974/Utilaje-destinate-procesarii-produselor-din-carne-lapte-unitati-productie-mici">
               <span itemprop="position" content="0">
                 <div>
-                  <a title="Utilaje destinate procesarii produselor din carne si lapte in unitati de productie mici si mijlocii" href="https://www.anticariat.net/p/126974/Utilaje-destinate-procesarii-produselor-din-carne-lapte-unitati-productie-mici">
+                  <a title="Utilaje destinate procesarii produselor din carne si lapte in unitati de productie mici si mijlocii"
+                    href="https://www.anticariat.net/p/126974/Utilaje-destinate-procesarii-produselor-din-carne-lapte-unitati-productie-mici">
                     <img class="book__cover" itemprop="image" src="https://www.anticariat.net/coperta/utilaje-destinate-procesarii-126974.jpg">
                   </a>
                 </div>
                 <div class="book__title">
-                  <a title="Utilaje destinate procesarii produselor din carne si lapte in unitati de productie mici si mijlocii" itemprop="url"
-                    href="https://www.anticariat.net/p/126974/Utilaje-destinate-procesarii-produselor-din-carne-lapte-unitati-productie-mici">
-                    <span itemprop="name">Utilaje destinate procesarii produselor din carne si lapte in unitati de productie
+                  <a title="Utilaje destinate procesarii produselor din carne si lapte in unitati de productie mici si mijlocii"
+                    itemprop="url" href="https://www.anticariat.net/p/126974/Utilaje-destinate-procesarii-produselor-din-carne-lapte-unitati-productie-mici">
+                    <span itemprop="name">Utilaje destinate procesarii produselor din carne si lapte in unitati de
+                      productie
                       mici si mijlocii</span>
                   </a>
                 </div>
