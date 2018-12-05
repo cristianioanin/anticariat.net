@@ -26,7 +26,7 @@
       text-decoration: none;
       background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
       background-size: 230%;
-      transition: all .4s;
+      transition: background-position .3s, color .3s, transform .3s ease-in-out;
 
       @include respond(phone) {
         padding: .2rem 1rem;
@@ -90,7 +90,7 @@
         border-bottom: 3px solid transparent;
         box-shadow: 0 .5rem 1rem rgba($color-black, .1);
         width: 70%;
-        transition: all .3s;
+        transition: box-shadow .2s, border-bottom .2s ease-in-out;
 
         @include respond(phone) {
           width: 90%;
@@ -116,7 +116,7 @@
         box-shadow: 0 1rem 2rem rgba($color-black, .1);
         cursor: pointer;
 
-        transition: all .3s;
+        transition: transform .3s, box-shadow .3s ease-in-out;
 
         @include respond(phone) {
           width: 75%;
@@ -208,7 +208,7 @@
     background-color: $color-primary-light;
     box-shadow: 0 1rem 2rem rgba($color-black, .1);
     cursor: pointer;
-    transition: all .3s;
+    transition: transform .3s, box-shadow .3s;
 
     & i {
       margin-top: 50%;

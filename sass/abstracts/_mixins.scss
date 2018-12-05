@@ -16,7 +16,6 @@
 @mixin animateLinkState($color) {
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color 50%);
   background-size: 230%;
-  transition: all .4s;
 }
 
 @mixin animateHoverState($color) {

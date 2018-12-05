@@ -29,7 +29,7 @@
       color: $color-white;
       background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-grey-light-2 50%);
       background-size: 230%;
-      transition: all .4s;
+      transition: background-position .3s, color .3s, transform .3s ease-in-out;
     }
 
     & a:hover,
@@ -74,9 +74,6 @@
     z-index: 3;
     height: 5rem;
     width: 5rem;
-
-    transition: all .4s;
-
     display: none;
 
     @include respond(phone) {
@@ -111,7 +108,7 @@
       margin-right: 1rem;
       background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
       background-size: 230%;
-      transition: all .4s;
+      transition: color .3s, font-weight .3s, transform .3s, background-position .3s ease-out;
     }
     
     &:hover,
@@ -137,7 +134,7 @@
         color: $color-primary;
         font-weight: 700;
 
-        transition: all .3s;
+        transition: transform .3s ease-in-out;
       }
 
       &:hover,
@@ -172,7 +169,7 @@
       border-bottom: 3px solid transparent;
       box-shadow: 0 .5rem 1rem rgba($color-black, .1);
       width: 100%;
-      transition: all .3s;
+      transition: box-shadow .3s, border-bottom .3s ease-in-out;
 
       &:focus {
         outline: none;
@@ -188,7 +185,7 @@
       border: none;
       padding: .5rem;
       border-radius: 4px;
-      transition: all .3s;
+      transition: transform .3s, box-shadow .3s ease-in-out;
       position: relative;
       right: -50%;
 
@@ -244,7 +241,7 @@
 
 .gallery {
   width: 100%;
-  background-color: $color-papyrus;
+  background-color: $color-white;
 
   &__frame {
     width: 100%;
@@ -289,9 +286,10 @@
 
       & h1 {
         text-align: left !important;
+        font-size: 2rem;
 
         @include respond(tab-portrait) {
-          font-size: 2.4rem;
+          font-size: 2rem;
         }
       }
       
@@ -346,7 +344,7 @@
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     
-    transition: all .4s;
+    transition: width .3s ease-out;
   }
 
   @include respond(revert-from-phone) {
