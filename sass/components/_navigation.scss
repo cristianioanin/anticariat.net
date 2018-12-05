@@ -33,6 +33,17 @@
       }
     }
 
+    &:last-of-type {
+      padding: .2rem 2rem .2rem 3rem;
+      position: relative;
+    }
+
+    i {
+      position: absolute;
+      top: 2px !important;
+      left: 2px !important;
+    }
+
     &:hover,
     &:active {
       background-position: 100%;
@@ -200,7 +211,7 @@
   &--icon {
     float: right;
     margin-right: 2rem;
-    margin-top: -3rem;
+    margin-top: -2.25rem;
     width: 10rem;
     height: 10rem;
     overflow: hidden;

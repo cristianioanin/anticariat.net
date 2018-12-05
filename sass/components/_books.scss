@@ -1,30 +1,35 @@
 .book {
   float: left;
-  width: calc((100% - 14rem) / 5);
-  margin: 2rem 1.4rem;
+  width: calc((100% - 10rem) / 5);
+  margin: 2rem 1rem;
   box-shadow: .5rem .5rem 1rem rgba($color-black, .2);
   border-radius: 3px;
   border-left: 1px solid rgba($color-primary-light, .1);
+  border-top: 1px solid rgba($color-primary-light, .1);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  cursor: pointer;
 
-  transition: transform .3s, box-shadow .3s, border-left .3s ease-in-out;
+  transition: transform, box-shadow, border-left, border-top;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
 
   &:hover {
     transform: translateY(-.5rem);
-    box-shadow: .5rem .5rem 1rem rgba($color-black, .3);
+    box-shadow: 1rem 1rem 2rem rgba($color-black, .3);
     border-left: 1px solid rgba($color-primary-light, .2);
+    border-top: 1px solid rgba($color-primary-light, .2);
   }
 
   @include respond(tab-landscape) {
-    margin: 2rem 1.4rem;
-    width: calc((100% - 14rem) / 4);
+    margin: 2rem 1rem;
+    width: calc((100% - 10rem) / 4);
   }
 
   @include respond(tab-portrait) {
-    margin: 2rem 1.2rem;
-    width: calc((100% - 12rem) / 3);
+    margin: 2rem 0.8rem;
+    width: calc((100% - 8rem) / 3);
   }
 
   @include respond(phone) {
@@ -33,7 +38,8 @@
   }
 
   &__cover {
-    height: 20rem;
+    padding: 1rem 2.5rem 0 2.5rem;
+    max-height: 22rem;
     width: 100%;
     object-fit: cover;
     object-position: top;
@@ -42,13 +48,12 @@
 
   &__title {
     background-color: $color-white;
-    position: relative;
-    line-height: 1.9rem;
+    line-height: 1.7rem;
     font-size: 1.6rem;
-    padding: 0 1rem .5rem 1rem;
+    padding: 0 1rem;
     overflow: hidden;
     text-overflow: ellipsis;
-    height: 5.7rem;
+    height: 5rem;
         
     & a:link,
     & a:visited {
@@ -59,19 +64,22 @@
 
   &__price {
     background-color: $color-white;
-    min-height: 4rem;
-    font-size: 2.2rem;
+    height: 4rem;
+    font-size: 2rem;
     padding-bottom: 1rem;
     color: $color-primary;
-    align-self: flex-end;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
 
     &--crossed {
+      font-size: 1.8rem;
       color: $color-grey-dark-2;
       text-decoration: line-through;
     }
 
     &--promo {
-      font-size: 2.2rem;
+      padding-left: 2px;
+      font-size: 2rem;
     }
   }
 }

@@ -107,62 +107,70 @@ body {
 
 .book {
   float: left;
-  width: calc((100% - 14rem) / 5);
-  margin: 2rem 1.4rem;
+  width: calc((100% - 10rem) / 5);
+  margin: 2rem 1rem;
   box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
   border-radius: 3px;
   border-left: 1px solid rgba(218, 2, 2, 0.1);
+  border-top: 1px solid rgba(218, 2, 2, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: transform .3s, box-shadow .3s, border-left .3s ease-in-out; }
+  cursor: pointer;
+  transition: transform, box-shadow, border-left, border-top;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out; }
   .book:hover {
     transform: translateY(-0.5rem);
-    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
-    border-left: 1px solid rgba(218, 2, 2, 0.2); }
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.3);
+    border-left: 1px solid rgba(218, 2, 2, 0.2);
+    border-top: 1px solid rgba(218, 2, 2, 0.2); }
   @media only screen and (max-width: 75em) {
     .book {
-      margin: 2rem 1.4rem;
-      width: calc((100% - 14rem) / 4); } }
+      margin: 2rem 1rem;
+      width: calc((100% - 10rem) / 4); } }
   @media only screen and (max-width: 56.25em) {
     .book {
-      margin: 2rem 1.2rem;
-      width: calc((100% - 12rem) / 3); } }
+      margin: 2rem 0.8rem;
+      width: calc((100% - 8rem) / 3); } }
   @media only screen and (max-width: 37.5em) {
     .book {
       margin: 2rem 1rem;
       width: calc((100% - 10rem) / 2); } }
   .book__cover {
-    height: 20rem;
+    padding: 1rem 2.5rem 0 2.5rem;
+    max-height: 22rem;
     width: 100%;
     object-fit: cover;
     object-position: top;
     border-radius: 3px 3px 0 0; }
   .book__title {
     background-color: #fff;
-    position: relative;
-    line-height: 1.9rem;
+    line-height: 1.7rem;
     font-size: 1.6rem;
-    padding: 0 1rem .5rem 1rem;
+    padding: 0 1rem;
     overflow: hidden;
     text-overflow: ellipsis;
-    height: 5.7rem; }
+    height: 5rem; }
     .book__title a:link,
     .book__title a:visited {
       text-decoration: none;
       color: #222; }
   .book__price {
     background-color: #fff;
-    min-height: 4rem;
-    font-size: 2.2rem;
+    height: 4rem;
+    font-size: 2rem;
     padding-bottom: 1rem;
     color: #C10202;
-    align-self: flex-end; }
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px; }
     .book__price--crossed {
+      font-size: 1.8rem;
       color: #777;
       text-decoration: line-through; }
     .book__price--promo {
-      font-size: 2.2rem; }
+      padding-left: 2px;
+      font-size: 2rem; }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -363,6 +371,13 @@ body {
       @media only screen and (max-width: 37.5em) {
         .navigation__link:link, .navigation__link:visited {
           padding: .2rem 1rem; } }
+    .navigation__link:last-of-type {
+      padding: .2rem 2rem .2rem 3rem;
+      position: relative; }
+    .navigation__link i {
+      position: absolute;
+      top: 2px !important;
+      left: 2px !important; }
     .navigation__link:hover, .navigation__link:active {
       background-position: 100%;
       color: #C10202;
@@ -484,7 +499,7 @@ body {
   .shopping-cart__preview--icon {
     float: right;
     margin-right: 2rem;
-    margin-top: -3rem;
+    margin-top: -2.25rem;
     width: 10rem;
     height: 10rem;
     overflow: hidden;
